@@ -448,6 +448,127 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section></>
+      </section>{/* ── WAVE DIVIDER ── */}
+      <svg viewBox="0 0 1440 56" preserveAspectRatio="none"
+        style={{ width: '100%', height: '56px', display: 'block', marginBottom: '-2px', background: '#FAF6F0', fill: '#2A2118' }}>
+        <path d="M0,56 C480,0 960,0 1440,56 L1440,56 L0,56 Z" />
+      </svg>
+
+      {/* ── LOAN TYPES ── */}
+      <section style={{ background: '#2A2118', padding: '80px 52px' }}>
+        {/* Overline */}
+        <div style={{
+          fontSize: '11px', fontWeight: 700, letterSpacing: '0.16em',
+          textTransform: 'uppercase' as const, color: '#F5E8E1',
+          display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '14px',
+        }}>
+          <span style={{ width: '28px', height: '2px', background: '#F5E8E1', display: 'block', flexShrink: 0 }} />
+          Loan programs
+        </div>
+
+        {/* Heading */}
+        <h2 style={{
+          fontSize: '44px', fontWeight: 800, color: '#FFFCF8',
+          lineHeight: 1.06, letterSpacing: '-0.025em', marginBottom: '16px',
+        }}>
+          A solution for{' '}
+          <span style={{ color: '#F5E8E1', fontStyle: 'italic' }}>every situation.</span>
+        </h2>
+
+        <p style={{
+          fontSize: '15px', color: 'rgba(250,246,240,0.72)', lineHeight: 1.78,
+          maxWidth: '560px', marginBottom: '44px',
+        }}>
+          From your first home to your forever home — and every unique situation
+          in between. I don&rsquo;t just hand you the most common product.
+          I find the right one for your life.
+        </p>
+
+        {/* Loan cards grid */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(4, 1fr)',
+          gap: '16px',
+        }}>
+          {[
+            {
+              tag: 'Most Popular', tagBg: '#F5E8E1', tagColor: '#8F4228',
+              topColor: '#B85C38', name: 'Conventional',
+              desc: 'Flexible terms and competitive rates for well-qualified buyers with solid credit and a down payment to work with.',
+            },
+            {
+              tag: 'Zero Down', tagBg: '#E4F0EC', tagColor: '#2E5245',
+              topColor: '#3D6B5C', name: 'VA Loans',
+              desc: 'You served. Zero down, no PMI, and some of the best rates available. Let your benefit work for you.',
+            },
+            {
+              tag: 'Rural Eligible', tagBg: '#E4F0EC', tagColor: '#2E5245',
+              topColor: '#4E8572', name: 'USDA Rural',
+              desc: 'Zero down financing for eligible Eastern WA and North Idaho areas. More places qualify than you\'d think.',
+            },
+            {
+              tag: 'Low Down', tagBg: '#F5E8E1', tagColor: '#8F4228',
+              topColor: '#CC6E49', name: 'FHA Loans',
+              desc: 'A strong path to homeownership for buyers building credit or working toward a larger down payment.',
+            },
+            {
+              tag: 'My Specialty', tagBg: '#E4F0EC', tagColor: '#2E5245',
+              topColor: '#3D6B5C', name: 'Construction & Renovation',
+              desc: 'Building from the ground up or renovating an existing home? Finance it all in one loan with someone who actually knows construction.',
+            },
+            {
+              tag: 'High Value', tagBg: '#F5E8E1', tagColor: '#8F4228',
+              topColor: '#A89278', name: 'Jumbo Loans',
+              desc: 'Purchasing above conventional limits? Competitive rates and flexible options for higher-value properties.',
+            },
+            {
+              tag: 'Flexible', tagBg: '#E4F0EC', tagColor: '#2E5245',
+              topColor: '#3D6B5C', name: 'Self-Employed',
+              desc: 'Bank statement and other programs built for how your income is actually structured. Your business is an asset.',
+            },
+            {
+              tag: 'Get Help', tagBg: '#F5E8E1', tagColor: '#8F4228',
+              topColor: '#B85C38', name: 'Down Payment Assistance',
+              desc: 'Washington and Idaho both offer DPA programs that can cover part or all of your down payment. You may qualify and not even know it.',
+            },
+          ].map((loan) => (
+            <a key={loan.name} className="loan-card-link" href={`/loan-types/${loan.name.toLowerCase().replace(/\s+/g, '-')}`}
+              style={{
+                background: '#FFFCF8',
+                border: '1px solid #E8DDD0',
+                borderRadius: '12px',
+                padding: '24px 20px',
+                borderTop: `3px solid ${loan.topColor}`,
+                textDecoration: 'none',
+                color: 'inherit',
+                display: 'block',
+                boxShadow: '0 2px 12px rgba(42,33,24,0.08)',
+                transition: 'transform 0.2s, box-shadow 0.2s',
+              }}
+            >
+              <div style={{
+                fontSize: '9px', fontWeight: 700, letterSpacing: '0.12em',
+                textTransform: 'uppercase' as const, padding: '3px 9px',
+                borderRadius: '4px', display: 'inline-block', marginBottom: '12px',
+                background: loan.tagBg, color: loan.tagColor,
+              }}>
+                {loan.tag}
+              </div>
+              <div style={{ fontSize: '15px', fontWeight: 800, color: '#2A2118', marginBottom: '7px' }}>
+                {loan.name}
+              </div>
+              <div style={{ fontSize: '12px', color: '#8C7B6E', lineHeight: 1.6, marginBottom: '14px' }}>
+                {loan.desc}
+              </div>
+              <div style={{ fontSize: '12px', fontWeight: 700, color: loan.topColor }}>
+                Learn more →
+              </div>
+            </a>
+          ))}
+        </div>
+      <style>{`
+          .loan-card-link { transition: transform 0.2s, box-shadow 0.2s; }
+          .loan-card-link:hover { transform: translateY(-6px); box-shadow: 0 18px 48px rgba(42,33,24,0.16) !important; }
+        `}</style></section></>
   );
 }
