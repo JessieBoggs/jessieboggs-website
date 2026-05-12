@@ -63,6 +63,8 @@ export default function Header() {
             { href: '/for-agents', label: 'For Agents' },
             { href: '/tools', label: 'Tools' },
             { href: '/resources', label: 'Resources' },
+            { href: '/about', label: 'About' },
+            { href: '/contact', label: 'Contact' },
           ].map((link) => (
             <li key={link.href} className="desktop-only">
               <Link href={link.href} style={{
@@ -175,6 +177,8 @@ export default function Header() {
             { href: '/for-agents', label: 'For Agents' },
             { href: '/tools', label: 'Tools' },
             { href: '/resources', label: 'Resources' },
+            { href: '/about', label: 'About' },
+            { href: '/contact', label: 'Contact' },
           ].map((link) => (
             <Link
               key={link.href}
