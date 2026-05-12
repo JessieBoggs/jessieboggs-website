@@ -280,6 +280,20 @@ body {
   .buyer-programs-grid {
     grid-template-columns: 1fr !important;
   }
+  /* ── AGENT PAGES ── */
+  .agents-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .agents-paths-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .agents-diff-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .agents-resources-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 
