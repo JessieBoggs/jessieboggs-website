@@ -227,6 +227,18 @@ body {
   .about-cta-overlay h2 {
     font-size: 28px !important;
   }
+/* ── CONTACT ── */
+  .contact-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .contact-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+  .contact-links-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 

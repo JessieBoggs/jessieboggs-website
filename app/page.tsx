@@ -311,7 +311,7 @@ export default function Home() {
                 width: '100%',
                 height: '500px',
                 objectFit: 'cover',
-                objectPosition: 'center top',
+                objectPosition: 'center 40%',
                 borderRadius: '16px',
                 boxShadow: '16px 16px 60px rgba(42,33,24,0.14)',
                 display: 'block',
