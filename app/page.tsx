@@ -673,6 +673,751 @@ export default function Home() {
           ))}
         </div>
       </section>
+        {/* ── WAVE DIVIDER ── */}
+      <svg viewBox="0 0 1440 56" preserveAspectRatio="none"
+        style={{ width: '100%', height: '56px', display: 'block', marginBottom: '-2px', background: '#F2EBE0', fill: '#1F3D32' }}>
+        <path d="M0,56 C480,0 960,0 1440,56 L1440,56 L0,56 Z" />
+      </svg>
+
+      {/* ── TESTIMONIALS ── */}
+      <section style={{ background: '#1F3D32', padding: '80px 52px' }}>
+        {/* Overline */}
+        <div style={{
+          fontSize: '11px', fontWeight: 700, letterSpacing: '0.16em',
+          textTransform: 'uppercase' as const, color: '#F5E8E1',
+          display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '14px',
+        }}>
+          <span style={{ width: '28px', height: '2px', background: '#F5E8E1', display: 'block', flexShrink: 0 }} />
+          Client stories
+        </div>
+
+        <h2 style={{
+          fontSize: '44px', fontWeight: 800, color: '#FFFCF8',
+          lineHeight: 1.06, letterSpacing: '-0.025em', marginBottom: '16px',
+        }}>
+          Real people.{' '}
+          <span style={{ color: '#F5E8E1', fontStyle: 'italic' }}>Real results.</span>
+        </h2>
+
+        <p style={{
+          fontSize: '15px', color: 'rgba(250,246,240,0.7)', lineHeight: 1.78,
+          maxWidth: '560px', marginBottom: '48px',
+        }}>
+          Don&rsquo;t take my word for it. Here&rsquo;s what clients have said about working with me.
+        </p>
+
+        {/* Testimonial grid */}
+        <div className="testi-grid" style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(2, 1fr)',
+          gap: '20px',
+        }}>
+          {[
+            {
+              border: '#B85C38',
+              quote: 'Jessie made the whole process feel effortless. He was upfront about everything, answered every question, and we closed ahead of schedule. His knowledge of homes, not just loans, made us feel like we had exactly the right person in our corner.',
+              name: 'Sarah M.',
+              location: 'Spokane Valley, WA',
+            },
+            {
+              border: '#3D6B5C',
+              quote: 'As a veteran I wanted someone who knew the VA loan process cold. Jessie walked us through every step, saved us thousands, and the communication was outstanding the whole way through.',
+              name: 'Marcus & Danielle T.',
+              location: 'Coeur d\'Alene, ID',
+            },
+            {
+              border: '#3D6B5C',
+              quote: 'First-time buyers with a million questions. Jessie never made us feel rushed or overwhelmed. The USDA loan he found us meant we could actually afford the home we wanted in Stevens County.',
+              name: 'Tyler & Megan R.',
+              location: 'Chewelah, WA',
+            },
+            {
+              border: '#B85C38',
+              quote: 'I have referred several clients to Jessie and every single one has come back to thank me. He communicates proactively, keeps deals on track, and treats every client like a priority. That is rare in this business.',
+              name: 'Jennifer K.',
+              location: 'Realtor — Spokane, WA',
+            },
+          ].map((t) => (
+            <div key={t.name} style={{
+              background: '#FFFCF8',
+              border: '1px solid #E8DDD0',
+              borderRadius: '12px',
+              padding: '28px',
+              borderLeft: `4px solid ${t.border}`,
+              boxShadow: '0 4px 20px rgba(42,33,24,0.1)',
+            }}>
+              {/* Stars */}
+              <div style={{ color: '#B85C38', fontSize: '15px', letterSpacing: '2px', marginBottom: '14px' }}>
+                ★★★★★
+              </div>
+              <p style={{
+                fontSize: '14px', color: '#4A3728', lineHeight: 1.78,
+                fontStyle: 'italic', marginBottom: '18px',
+              }}>
+                &ldquo;{t.quote}&rdquo;
+              </p>
+              <div style={{ fontSize: '13px', fontWeight: 800, color: '#2A2118' }}>
+                {t.name}
+              </div>
+              <div style={{ fontSize: '11px', color: '#8C7B6E', marginTop: '2px' }}>
+                {t.location}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Placeholder notice */}
+        <p style={{
+          fontSize: '12px', color: 'rgba(250,246,240,0.4)',
+          textAlign: 'center', marginTop: '32px', fontStyle: 'italic',
+        }}>
+          * Placeholder reviews — replace with real client testimonials before launch
+        </p>
+      </section>
+      {/* ── WAVE DIVIDER ── */}
+      <svg viewBox="0 0 1440 56" preserveAspectRatio="none"
+        style={{ width: '100%', height: '56px', display: 'block', marginBottom: '-2px', background: '#1F3D32', fill: '#FAF6F0' }}>
+        <path d="M0,0 C360,56 1080,56 1440,0 L1440,56 L0,56 Z" />
+      </svg>
+
+      {/* ── TOOLS CALLOUT ── */}
+      <section style={{ background: '#FAF6F0', padding: '80px 52px' }}>
+        <div style={{
+          display: 'flex', alignItems: 'flex-end',
+          justifyContent: 'space-between', flexWrap: 'wrap',
+          gap: '20px', marginBottom: '44px',
+        }}>
+          <div>
+            <div style={{
+              fontSize: '11px', fontWeight: 700, letterSpacing: '0.16em',
+              textTransform: 'uppercase' as const, color: '#3D6B5C',
+              display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '14px',
+            }}>
+              <span style={{ width: '28px', height: '2px', background: '#3D6B5C', display: 'block', flexShrink: 0 }} />
+              Free mortgage tools
+            </div>
+            <h2 style={{
+              fontSize: '44px', fontWeight: 800, color: '#2A2118',
+              lineHeight: 1.06, letterSpacing: '-0.025em', marginBottom: '0',
+            }}>
+              Run the numbers{' '}
+              <span style={{ color: '#3D6B5C' }}>before you commit.</span>
+            </h2>
+          </div>
+          <Link href="/tools" style={{
+            display: 'inline-flex', alignItems: 'center',
+            background: '#3D6B5C', color: '#FFFCF8',
+            fontSize: '14px', fontWeight: 700, padding: '14px 28px',
+            borderRadius: '6px', textDecoration: 'none',
+            boxShadow: '0 4px 16px rgba(61,107,92,0.28)',
+            whiteSpace: 'nowrap' as const,
+          }}>
+            View All Tools
+          </Link>
+        </div>
+
+        <p style={{
+          fontSize: '15px', color: '#4A3728', lineHeight: 1.78,
+          maxWidth: '620px', marginBottom: '44px',
+        }}>
+          Interactive calculators built for Eastern WA and North Idaho buyers.
+          No email required. Just real numbers, right now.
+        </p>
+
+        <div className="tools-grid" style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(2, 1fr)',
+          gap: '16px',
+        }}>
+          {[
+            {
+              bg: '#E4F0EC', iconBg: 'rgba(61,107,92,0.15)', iconColor: '#3D6B5C',
+              icon: '🧮', nameColor: '#2E5245',
+              name: 'Mortgage Calculator',
+              desc: 'Conventional, FHA, VA, USDA, and Jumbo all in one tool. Adjust rate, term, and down payment in real time.',
+              href: '/tools/mortgage-calculator',
+            },
+            {
+              bg: '#F5E8E1', iconBg: 'rgba(184,92,56,0.15)', iconColor: '#8F4228',
+              icon: '🎖️', nameColor: '#8F4228',
+              name: 'VA LGY Guaranty Calculator',
+              desc: 'Calculate your exact VA guaranty, remaining entitlement, and funding fee based on your service record.',
+              href: '/tools/va-calculator',
+            },
+            {
+              bg: '#F5EFE8', iconBg: 'rgba(168,146,120,0.15)', iconColor: '#A89278',
+              icon: '🏡', nameColor: '#3D2E22',
+              name: 'Affordability Calculator',
+              desc: 'Enter your income, debts, and down payment to get a real estimate of your purchase price range.',
+              href: '/tools/affordability-calculator',
+            },
+            {
+              bg: '#E4F0EC', iconBg: 'rgba(61,107,92,0.15)', iconColor: '#3D6B5C',
+              icon: '⚖️', nameColor: '#2E5245',
+              name: 'Loan Comparison Tool',
+              desc: 'Side-by-side comparison of loan types on the same purchase price. See exactly what changes and why.',
+              href: '/tools/loan-comparison',
+            },
+          ].map((tool) => (
+            <Link key={tool.name} href={tool.href} style={{
+              background: tool.bg,
+              borderRadius: '12px',
+              padding: '26px',
+              display: 'flex',
+              gap: '18px',
+              alignItems: 'flex-start',
+              textDecoration: 'none',
+              color: 'inherit',
+              border: '1px solid transparent',
+              transition: 'border-color 0.2s, transform 0.2s',
+            }}>
+              <div style={{
+                width: '48px', height: '48px', borderRadius: '10px',
+                background: tool.iconBg, display: 'flex',
+                alignItems: 'center', justifyContent: 'center',
+                fontSize: '22px', flexShrink: 0,
+              }}>
+                {tool.icon}
+              </div>
+              <div>
+                <div style={{ fontSize: '15px', fontWeight: 700, color: tool.nameColor, marginBottom: '6px' }}>
+                  {tool.name}
+                </div>
+                <div style={{ fontSize: '13px', color: '#4A3728', lineHeight: 1.65 }}>
+                  {tool.desc}
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* ── WAVE DIVIDER ── */}
+      <svg viewBox="0 0 1440 56" preserveAspectRatio="none"
+        style={{ width: '100%', height: '56px', display: 'block', marginBottom: '-2px', background: '#FAF6F0', fill: '#2E5245' }}>
+        <path d="M0,56 C480,0 960,0 1440,56 L1440,56 L0,56 Z" />
+      </svg>
+
+      {/* ── FOR AGENTS ── */}
+      <section style={{ background: '#2E5245', padding: '80px 52px' }}>
+        <div className="agent-grid" style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          gap: '80px',
+          alignItems: 'center',
+        }}>
+          {/* Left */}
+          <div>
+            <div style={{
+              fontSize: '11px', fontWeight: 700, letterSpacing: '0.16em',
+              textTransform: 'uppercase' as const, color: '#F5E8E1',
+              display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '14px',
+            }}>
+              <span style={{ width: '28px', height: '2px', background: '#F5E8E1', display: 'block', flexShrink: 0 }} />
+              For real estate agents
+            </div>
+            <h2 style={{
+              fontSize: '44px', fontWeight: 800, color: '#FFFCF8',
+              lineHeight: 1.06, letterSpacing: '-0.025em', marginBottom: '16px',
+            }}>
+              A partner who makes{' '}
+              <span style={{ color: '#F5E8E1', fontStyle: 'italic' }}>you look good.</span>
+            </h2>
+            <p style={{
+              fontSize: '15px', color: 'rgba(250,246,240,0.75)', lineHeight: 1.78, marginBottom: '32px',
+            }}>
+              I keep deals alive, communicate proactively, and treat your clients like my own.
+              My remodeling background means I can navigate appraisal gaps that stop other loan officers cold.
+            </p>
+            <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginBottom: '36px' }}>
+              <Link href="/for-agents/referral" style={{
+                display: 'inline-flex', alignItems: 'center',
+                background: '#B85C38', color: '#FFFCF8',
+                fontSize: '14px', fontWeight: 700, padding: '14px 28px',
+                borderRadius: '6px', textDecoration: 'none',
+                boxShadow: '0 4px 16px rgba(184,92,56,0.3)',
+              }}>
+                Partner With Me
+              </Link>
+              <Link href="/for-agents/resources" style={{
+                display: 'inline-flex', alignItems: 'center',
+                background: 'transparent', color: '#D4C4B0',
+                fontSize: '14px', fontWeight: 700, padding: '13px 28px',
+                borderRadius: '6px', textDecoration: 'none',
+                border: '2px solid #D4C4B0',
+              }}>
+                Agent Resources
+              </Link>
+            </div>
+            {/* Feature list */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              {[
+                { title: 'Same-Day Pre-Approvals', text: 'Your clients get the edge they need the moment they need it.' },
+                { title: 'Proactive Communication', text: 'You will never chase me for a status update. I keep you in the loop at every milestone.' },
+                { title: 'Shareable Client Resources', text: 'Market updates, buyer guides, and content your clients will actually read.' },
+                { title: 'Construction Expertise', text: 'I evaluate properties through a contractor\'s eyes. That knowledge keeps deals alive.' },
+              ].map((feat) => (
+                <div key={feat.title} style={{
+                  display: 'flex', gap: '12px', alignItems: 'flex-start',
+                  padding: '16px 18px',
+                  background: 'rgba(255,255,255,0.05)',
+                  border: '1px solid rgba(228,240,236,0.1)',
+                  borderRadius: '10px',
+                }}>
+                  <span style={{ color: '#8FCBBF', fontSize: '16px', flexShrink: 0 }}>✓</span>
+                  <div>
+                    <div style={{ fontSize: '14px', fontWeight: 700, color: '#FFFCF8', marginBottom: '2px' }}>
+                      {feat.title}
+                    </div>
+                    <div style={{ fontSize: '13px', color: 'rgba(228,240,236,0.68)', lineHeight: 1.6 }}>
+                      {feat.text}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right -- CTA cards */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            <div style={{
+              background: '#FFFCF8', borderRadius: '12px', padding: '28px',
+              border: '1px solid #E8DDD0',
+              boxShadow: '0 6px 28px rgba(42,33,24,0.1)',
+            }}>
+              <h3 style={{ fontSize: '18px', fontWeight: 800, color: '#2A2118', marginBottom: '8px' }}>
+                Refer a Client
+              </h3>
+              <p style={{ fontSize: '13px', color: '#4A3728', lineHeight: 1.7, marginBottom: '20px' }}>
+                Have a buyer who is ready to go? Send them my way and I will take it from there,
+                keeping you in the loop every step of the way.
+              </p>
+              <Link href="/for-agents/referral" style={{
+                display: 'inline-flex', alignItems: 'center',
+                background: '#B85C38', color: '#FFFCF8',
+                fontSize: '14px', fontWeight: 700, padding: '12px 24px',
+                borderRadius: '6px', textDecoration: 'none',
+              }}>
+                Submit a Referral
+              </Link>
+            </div>
+            <div style={{
+              background: '#FFFCF8', borderRadius: '12px', padding: '28px',
+              border: '1px solid #E8DDD0', borderLeft: '4px solid #3D6B5C',
+              boxShadow: '0 6px 28px rgba(42,33,24,0.1)',
+            }}>
+              <h3 style={{ fontSize: '18px', fontWeight: 800, color: '#2A2118', marginBottom: '8px' }}>
+                Agent Resource Library
+              </h3>
+              <p style={{ fontSize: '13px', color: '#4A3728', lineHeight: 1.7, marginBottom: '20px' }}>
+                Market updates, co-brandable buyer guides, and content you can share directly
+                with your clients. Updated regularly so it is always current.
+              </p>
+              <Link href="/for-agents/resources" style={{
+                display: 'inline-flex', alignItems: 'center',
+                background: '#3D6B5C', color: '#FFFCF8',
+                fontSize: '14px', fontWeight: 700, padding: '12px 24px',
+                borderRadius: '6px', textDecoration: 'none',
+              }}>
+                Browse Resources
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── WAVE DIVIDER ── */}
+      <svg viewBox="0 0 1440 56" preserveAspectRatio="none"
+        style={{ width: '100%', height: '56px', display: 'block', marginBottom: '-2px', background: '#2E5245', fill: '#2A2118' }}>
+        <path d="M0,0 C360,56 1080,56 1440,0 L1440,56 L0,56 Z" />
+      </svg>
+
+      {/* ── SERVICE AREAS ── */}
+      <section style={{ background: '#2A2118', padding: '80px 52px' }}>
+        <div style={{
+          fontSize: '11px', fontWeight: 700, letterSpacing: '0.16em',
+          textTransform: 'uppercase' as const, color: '#F5E8E1',
+          display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '14px',
+        }}>
+          <span style={{ width: '28px', height: '2px', background: '#F5E8E1', display: 'block', flexShrink: 0 }} />
+          Service area
+        </div>
+        <h2 style={{
+          fontSize: '44px', fontWeight: 800, color: '#FFFCF8',
+          lineHeight: 1.06, letterSpacing: '-0.025em', marginBottom: '16px',
+        }}>
+          Eastern WA &amp;{' '}
+          <span style={{ color: '#8FCBBF' }}>North Idaho.</span>
+        </h2>
+        <p style={{
+          fontSize: '15px', color: 'rgba(250,246,240,0.7)', lineHeight: 1.78,
+          maxWidth: '560px', marginBottom: '44px',
+        }}>
+          Local knowledge across the entire region. From Spokane to the Idaho Panhandle
+          and everywhere in between. I know these communities because I live here.
+        </p>
+        <div className="areas-grid" style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(4, 1fr)',
+          gap: '12px',
+        }}>
+          {[
+            { name: 'Spokane',        state: 'WA', stateBg: '#8F4228' },
+            { name: 'Spokane Valley', state: 'WA', stateBg: '#8F4228' },
+            { name: 'Coeur d\'Alene', state: 'ID', stateBg: '#2E5245' },
+            { name: 'Post Falls',     state: 'ID', stateBg: '#2E5245' },
+            { name: 'Deer Park',       state: 'WA', stateBg: '#8F4228' },
+            { name: 'Newport', state: 'WA', stateBg: '#8F4228' },
+            { name: 'Sandpoint',      state: 'ID', stateBg: '#2E5245' },
+            { name: 'Hayden',         state: 'ID', stateBg: '#2E5245' },
+            { name: 'Liberty Lake',   state: 'WA', stateBg: '#8F4228' },
+            { name: 'Airway Heights',       state: 'WA', stateBg: '#8F4228' },
+            { name: 'Rathdrum',       state: 'ID', stateBg: '#2E5245' },
+            { name: 'Athol',    state: 'ID', stateBg: '#2E5245' },
+          ].map((area) => (
+            <div key={area.name} style={{
+              background: 'rgba(255,255,255,0.04)',
+              border: '1px solid rgba(212,196,176,0.2)',
+              borderRadius: '10px',
+              padding: '14px 16px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+            }}>
+              <span style={{ fontSize: '13px', fontWeight: 600, color: '#D4C4B0' }}>
+                {area.name}
+              </span>
+              <span style={{
+                fontSize: '10px', fontWeight: 700, color: '#FFFCF8',
+                background: area.stateBg, padding: '2px 8px',
+                borderRadius: '4px', letterSpacing: '0.06em',
+              }}>
+                {area.state}
+              </span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── WAVE DIVIDER ── */}
+      <svg viewBox="0 0 1440 56" preserveAspectRatio="none"
+        style={{ width: '100%', height: '56px', display: 'block', marginBottom: '-2px', background: '#2A2118', fill: '#F2EBE0' }}>
+        <path d="M0,0 C360,56 1080,56 1440,0 L1440,56 L0,56 Z" />
+      </svg>
+
+      {/* ── BLOG PREVIEW ── */}
+      <section style={{ background: '#F2EBE0', padding: '80px 52px' }}>
+        <div style={{
+          display: 'flex', alignItems: 'flex-end',
+          justifyContent: 'space-between', flexWrap: 'wrap',
+          gap: '20px', marginBottom: '48px',
+        }}>
+          <div>
+            <div style={{
+              fontSize: '11px', fontWeight: 700, letterSpacing: '0.16em',
+              textTransform: 'uppercase' as const, color: '#B85C38',
+              display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '14px',
+            }}>
+              <span style={{ width: '28px', height: '2px', background: '#B85C38', display: 'block', flexShrink: 0 }} />
+              Resources &amp; insights
+            </div>
+            <h2 style={{
+              fontSize: '44px', fontWeight: 800, color: '#2A2118',
+              lineHeight: 1.06, letterSpacing: '-0.025em', marginBottom: '0',
+            }}>
+              Stay <span style={{ color: '#B85C38', fontStyle: 'italic' }}>informed.</span>
+            </h2>
+          </div>
+          <Link href="/resources" style={{
+            display: 'inline-flex', alignItems: 'center',
+            background: 'transparent', color: '#2A2118',
+            fontSize: '14px', fontWeight: 700, padding: '13px 28px',
+            borderRadius: '6px', textDecoration: 'none',
+            border: '2px solid #2A2118',
+            whiteSpace: 'nowrap' as const,
+          }}>
+            View All Articles
+          </Link>
+        </div>
+
+        <div className="blog-grid" style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(3, 1fr)',
+          gap: '20px',
+        }}>
+          {[
+            {
+              thumbBg: '#F5E8E1', thumbBorder: '#B85C38', thumbColor: '#8F4228',
+              cat: 'Market Update',
+              title: 'What Rising Rates Really Mean for Eastern WA Buyers Right Now',
+              date: 'May 2026', read: '4 min read',
+              href: '/resources/blog/rates-eastern-wa',
+            },
+            {
+              thumbBg: '#E4F0EC', thumbBorder: '#3D6B5C', thumbColor: '#2E5245',
+              cat: 'VA Loans',
+              title: 'The VA Loan Advantage: Why It\'s Still the Best Deal in Mortgage',
+              date: 'May 2026', read: '5 min read',
+              href: '/resources/blog/va-loan-advantage',
+            },
+            {
+              thumbBg: '#F5EFE8', thumbBorder: '#A89278', thumbColor: '#A89278',
+              cat: 'First-Time Buyers',
+              title: 'USDA Loans in Stevens County: Zero Down in More Places Than You Think',
+              date: 'April 2026', read: '3 min read',
+              href: '/resources/blog/usda-stevens-county',
+            },
+          ].map((post) => (
+            <Link key={post.title} href={post.href} style={{
+              background: '#FFFCF8',
+              border: '1px solid #E8DDD0',
+              borderRadius: '12px',
+              overflow: 'hidden',
+              textDecoration: 'none',
+              color: 'inherit',
+              display: 'block',
+              boxShadow: '0 4px 20px rgba(42,33,24,0.07)',
+            }}>
+              <div style={{
+                height: '120px',
+                background: post.thumbBg,
+                borderBottom: `3px solid ${post.thumbBorder}`,
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                fontSize: '16px', fontWeight: 700, letterSpacing: '0.06em',
+                textTransform: 'uppercase' as const, color: post.thumbColor,
+              }}>
+                {post.cat}
+              </div>
+              <div style={{ padding: '20px' }}>
+                <div style={{ fontSize: '14px', fontWeight: 700, color: '#2A2118', lineHeight: 1.45, marginBottom: '8px' }}>
+                  {post.title}
+                </div>
+                <div style={{ fontSize: '11px', color: '#8C7B6E' }}>
+                  {post.date} &bull; {post.read}
+                </div>
+                <div style={{ fontSize: '12px', fontWeight: 700, color: '#B85C38', marginTop: '12px' }}>
+                  Read more &rarr;
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* ── WAVE DIVIDER ── */}
+      <svg viewBox="0 0 1440 56" preserveAspectRatio="none"
+        style={{ width: '100%', height: '56px', display: 'block', marginBottom: '-2px', background: '#F2EBE0', fill: '#B85C38' }}>
+        <path d="M0,56 C480,0 960,0 1440,56 L1440,56 L0,56 Z" />
+      </svg>
+
+      {/* ── CTA BAND ── */}
+      <section style={{
+        background: '#B85C38', padding: '80px 52px',
+        display: 'flex', alignItems: 'center',
+        justifyContent: 'space-between', gap: '40px', flexWrap: 'wrap',
+        position: 'relative', overflow: 'hidden',
+      }}>
+        {/* Dot texture */}
+        <div style={{
+          position: 'absolute', inset: 0, opacity: 0.07, pointerEvents: 'none',
+          backgroundImage: 'radial-gradient(circle, rgba(250,246,240,1) 1px, transparent 1px)',
+          backgroundSize: '28px 28px',
+        }} />
+        <div style={{ position: 'relative', zIndex: 2 }}>
+          <h2 style={{
+            fontSize: '44px', fontWeight: 800, color: '#FFFCF8',
+            lineHeight: 1.06, letterSpacing: '-0.025em',
+          }}>
+            Ready to make{' '}
+            <span style={{ color: '#2A2118' }}>your move?</span>
+          </h2>
+          <p style={{
+            fontSize: '16px', color: 'rgba(255,255,255,0.82)',
+            lineHeight: 1.7, marginTop: '10px', maxWidth: '480px',
+          }}>
+            No pressure, no jargon. Just real answers from someone who knows
+            this market inside and out.
+          </p>
+        </div>
+        <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', position: 'relative', zIndex: 2 }}>
+          <Link href="/get-started/pre-approval" style={{
+            display: 'inline-flex', alignItems: 'center',
+            background: '#2A2118', color: '#FFFCF8',
+            fontSize: '14px', fontWeight: 700, padding: '15px 30px',
+            borderRadius: '6px', textDecoration: 'none',
+            whiteSpace: 'nowrap' as const,
+          }}>
+            Get Pre-Approved
+          </Link>
+          <Link href="/get-started/schedule" style={{
+            display: 'inline-flex', alignItems: 'center',
+            background: 'transparent', color: '#FFFCF8',
+            fontSize: '14px', fontWeight: 700, padding: '13px 28px',
+            borderRadius: '6px', textDecoration: 'none',
+            border: '2px solid rgba(255,255,255,0.4)',
+            whiteSpace: 'nowrap' as const,
+          }}>
+            Schedule a Call
+          </Link>
+        </div>
+      </section>
+
+      {/* ── FOOTER ── */}
+      <footer style={{ background: '#3D2E22', padding: '64px 52px 28px', position: 'relative' }}>
+        {/* Subtle grid texture */}
+        <div style={{
+          position: 'absolute', inset: 0, zIndex: 0, opacity: 0.025, pointerEvents: 'none',
+          backgroundImage: 'repeating-linear-gradient(0deg, #FAF6F0 0px, transparent 1px, transparent 4px), repeating-linear-gradient(90deg, #FAF6F0 0px, transparent 1px, transparent 4px)',
+          backgroundSize: '5px 5px',
+        }} />
+
+        <div style={{ position: 'relative', zIndex: 1 }}>
+          {/* Footer top grid */}
+          <div className="footer-grid" style={{
+            display: 'grid',
+            gridTemplateColumns: '2.2fr 1fr 1fr 1fr',
+            gap: '48px',
+            paddingBottom: '44px',
+            borderBottom: '1px solid rgba(255,255,255,0.07)',
+            marginBottom: '24px',
+          }}>
+            {/* Brand col */}
+            <div>
+              <div style={{ fontSize: '21px', fontWeight: 800, color: '#FFFCF8', letterSpacing: '-0.02em', marginBottom: '4px' }}>
+                Jessie Boggs
+              </div>
+              <div style={{ fontSize: '10px', color: '#F5E8E1', letterSpacing: '0.13em', textTransform: 'uppercase' as const, fontWeight: 600, marginBottom: '14px' }}>
+                Mortgage Loan Strategist
+              </div>
+              <p style={{ fontSize: '13px', color: '#D4C4B0', lineHeight: 1.72, maxWidth: '270px', marginBottom: '20px' }}>
+                Serving Eastern Washington and North Idaho.
+                20+ years in sales and residential construction.
+                Built different, by design.
+              </p>
+              {/* Social icons */}
+              <div style={{ display: 'flex', gap: '10px' }}>
+                {[
+                  { label: 'Facebook', href: 'https://facebook.com', letter: 'f' },
+                  { label: 'Instagram', href: 'https://instagram.com', letter: 'ig' },
+                  { label: 'LinkedIn', href: 'https://linkedin.com', letter: 'in' },
+                  { label: 'YouTube', href: 'https://youtube.com', letter: 'yt' },
+                ].map((s) => (
+                  <a key={s.label} href={s.href} aria-label={s.label} style={{
+                    width: '34px', height: '34px', borderRadius: '7px',
+                    background: 'rgba(255,255,255,0.06)',
+                    border: '1px solid rgba(255,255,255,0.1)',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    fontSize: '12px', fontWeight: 700, color: '#D4C4B0',
+                    textDecoration: 'none',
+                  }}>
+                    {s.letter}
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* Loan Types col */}
+            <div>
+              <div style={{ fontSize: '10px', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase' as const, color: '#D4C4B0', marginBottom: '14px' }}>
+                Loan Types
+              </div>
+              {['Conventional', 'VA Loans', 'USDA Rural', 'FHA Loans', 'Construction', 'Renovation', 'Self-Employed'].map((l) => (
+                <Link key={l} href={`/loan-types/${l.toLowerCase().replace(/\s+/g, '-')}`} style={{
+                  display: 'block', fontSize: '12px',
+                  color: 'rgba(212,196,176,0.65)', textDecoration: 'none',
+                  marginBottom: '9px',
+                }}>
+                  {l}
+                </Link>
+              ))}
+            </div>
+
+            {/* For You col */}
+            <div>
+              <div style={{ fontSize: '10px', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase' as const, color: '#D4C4B0', marginBottom: '14px' }}>
+                For You
+              </div>
+              {[
+                { label: 'First-Time Buyers', href: '/buyers/first-time' },
+                { label: 'Veterans', href: '/buyers/veterans' },
+                { label: 'Rural Buyers', href: '/buyers/rural' },
+                { label: 'Move-Up Buyers', href: '/buyers/move-up' },
+                { label: 'For Agents', href: '/for-agents' },
+                { label: 'Calculators', href: '/tools' },
+                { label: 'Resources', href: '/resources' },
+              ].map((l) => (
+                <Link key={l.label} href={l.href} style={{
+                  display: 'block', fontSize: '12px',
+                  color: 'rgba(212,196,176,0.65)', textDecoration: 'none',
+                  marginBottom: '9px',
+                }}>
+                  {l.label}
+                </Link>
+              ))}
+            </div>
+
+            {/* Get Started col */}
+            <div>
+              <div style={{ fontSize: '10px', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase' as const, color: '#D4C4B0', marginBottom: '14px' }}>
+                Get Started
+              </div>
+              {[
+                { label: 'Get Pre-Approved', href: '/get-started/pre-approval' },
+                { label: 'Schedule a Call', href: '/get-started/schedule' },
+                { label: 'Apply Now', href: '/get-started/apply' },
+                { label: 'About Jessie', href: '/about' },
+                { label: 'Reviews', href: '/reviews' },
+                { label: 'Contact', href: '/contact' },
+              ].map((l) => (
+                <Link key={l.label} href={l.href} style={{
+                  display: 'block', fontSize: '12px',
+                  color: 'rgba(212,196,176,0.65)', textDecoration: 'none',
+                  marginBottom: '9px',
+                }}>
+                  {l.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Footer bottom */}
+          <div style={{
+            display: 'flex', alignItems: 'flex-start',
+            justifyContent: 'space-between', gap: '20px', flexWrap: 'wrap',
+          }}>
+            <p style={{
+              fontSize: '10px', color: 'rgba(212,196,176,0.38)',
+              lineHeight: 1.9, maxWidth: '620px',
+            }}>
+              Jessie Boggs NMLS #2803455 | Licensed in Washington and Idaho |
+              Powered by Edge Home Finance Corporation NMLS #891464 |
+              Loans in other states originated in partnership with Edge Home Finance&rsquo;s Client Care Team.&nbsp;
+              <a href="https://edgehomefinance.com/licensing-disclaimer/" target="_blank" style={{ color: 'rgba(212,196,176,0.38)', textDecoration: 'underline' }}>
+                Licensing Disclaimer
+              </a>&nbsp;|&nbsp;
+              <a href="https://www.nmlsconsumeraccess.org" target="_blank" style={{ color: 'rgba(212,196,176,0.38)', textDecoration: 'underline' }}>
+                NMLS Consumer Access
+              </a>&nbsp;|&nbsp;
+              <a href="/legal/privacy-policy" style={{ color: 'rgba(212,196,176,0.38)', textDecoration: 'underline' }}>
+                Privacy Policy
+              </a>&nbsp;|&nbsp;
+              <a href="/legal/terms" style={{ color: 'rgba(212,196,176,0.38)', textDecoration: 'underline' }}>
+                Terms of Use
+              </a>
+              <br />
+              &copy; 2026 Jessie Boggs. All rights reserved.
+              This is not a commitment to lend. All loans subject to approval.
+            </p>
+            <Image
+              src="/2_-_Equal_Housing_Opportunity_Logo__1_.png"
+              alt="Equal Housing Opportunity"
+              width={60}
+              height={60}
+              style={{ opacity: 0.22, filter: 'grayscale(1) brightness(2)', flexShrink: 0 }}
+            />
+          </div>
+        </div>
+      </footer>  
         </>
   );
 }

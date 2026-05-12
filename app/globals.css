@@ -147,7 +147,44 @@ body {
   h2 {
     font-size: 32px !important;
   }
+    /* ── TESTIMONIALS ── */
+  .testi-grid {
+    grid-template-columns: 1fr !important;
+  }
+  /* ── TOOLS ── */
+  .tools-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── AGENTS ── */
+  .agent-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+
+  /* ── AREAS ── */
+  .areas-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* ── BLOG ── */
+  .blog-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── FOOTER ── */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+  }
+
+  /* ── CTA BAND ── */
+  .cta-band {
+    flex-direction: column !important;
+    padding: 52px 24px !important;
+  }
 }
+
 
 @media (max-width: 480px) {
   .hero-h1 {
