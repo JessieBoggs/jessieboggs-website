@@ -35,3 +35,125 @@ body {
   color: var(--espresso);
   -webkit-font-smoothing: antialiased;
 }
+/* ══════════════════════════════════
+   MOBILE RESPONSIVE — 768px and below
+══════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* ── HEADER ── */
+  .header-logo-bar {
+    padding: 12px 16px !important;
+  }
+
+  /* ── HERO ── */
+  .hero-section {
+    grid-template-columns: 1fr !important;
+    padding: 0 !important;
+    min-height: unset !important;
+  }
+  .hero-photo-col {
+    order: -1;
+    width: 100% !important;
+  }
+  .hero-photo-col img {
+    width: 100% !important;
+    height: 300px !important;
+    min-height: unset !important;
+    object-position: center 15% !important;
+  }
+  .hero-nmls-card {
+    display: none !important;
+  }
+  .hero-content {
+    padding: 36px 24px 48px !important;
+    max-width: 100% !important;
+  }
+  .hero-h1 {
+    font-size: 36px !important;
+  }
+  .hero-sub {
+    font-size: 14px !important;
+  }
+  .hero-btns {
+    flex-direction: column !important;
+  }
+  .hero-btns a {
+    text-align: center !important;
+    justify-content: center !important;
+  }
+  .hero-stats {
+    gap: 16px !important;
+    flex-wrap: wrap !important;
+  }
+  .hero-blob {
+    display: none !important;
+  }
+
+  /* ── CREDENTIAL BAR ── */
+  .cred-bar {
+    padding: 12px 20px !important;
+    justify-content: center !important;
+  }
+  .cred-divider {
+    display: none !important;
+  }
+
+  /* ── PROOF STRIP ── */
+  .proof-strip {
+    padding: 20px !important;
+    gap: 12px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .proof-divider {
+    display: none !important;
+  }
+
+  /* ── WHY JESSIE ── */
+  .why-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .why-photo img {
+    height: 360px !important;
+  }
+  .why-badge {
+    bottom: -14px !important;
+    right: -10px !important;
+  }
+
+  /* ── LOAN CARDS ── */
+  .loans-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  /* ── PROCESS ── */
+  .process-steps {
+    grid-template-columns: 1fr !important;
+  }
+  .process-step {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+  }
+  .process-step:last-child {
+    border-bottom: none !important;
+  }
+
+  /* ── GENERAL SECTIONS ── */
+  section {
+    padding: 60px 24px !important;
+  }
+  h2 {
+    font-size: 32px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-h1 {
+    font-size: 30px !important;
+  }
+  .loans-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       {/* ── HERO ── */}
-      <section style={{
+      <section className="hero-section" style={{
         background: '#F2EBE0',
         display: 'grid',
         gridTemplateColumns: '1fr 420px',
@@ -15,7 +15,7 @@ export default function Home() {
         overflow: 'hidden',
       }}>
         {/* Dot grid texture */}
-        <div style={{
+        <div className="hero-content" style={{
           position: 'absolute',
           inset: 0,
           zIndex: 1,
@@ -26,7 +26,7 @@ export default function Home() {
         }} />
 
         {/* Terracotta blob */}
-        <div style={{
+        <div className="hero-blob" style={{
           position: 'absolute',
           top: 0, right: 0, bottom: 0,
           width: '380px',
@@ -60,7 +60,7 @@ export default function Home() {
           </div>
 
           {/* H1 */}
-          <h1 style={{
+          <h1 className="hero-h1" style={{
             fontSize: '58px',
             fontWeight: 800,
             color: '#2A2118',
@@ -89,7 +89,7 @@ export default function Home() {
           </p>
 
           {/* Buttons */}
-          <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginBottom: '44px' }}>
+          <div className="hero-btns" style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginBottom: '44px' }}>
             <Link href="/get-started/pre-approval" style={{
               display: 'inline-flex',
               alignItems: 'center',
@@ -124,7 +124,7 @@ export default function Home() {
           </div>
 
           {/* Stats */}
-          <div style={{
+          <div className="hero-stats" style={{
             display: 'flex',
             gap: '28px',
             paddingTop: '28px',
@@ -169,7 +169,7 @@ export default function Home() {
         </div>
 
         {/* Right — headshot */}
-        <div style={{ position: 'relative', zIndex: 3, display: 'flex', alignItems: 'stretch' }}>
+        <div className="hero-photo-col" style={{ position: 'relative', zIndex: 3, display: 'flex', alignItems: 'stretch' }}>
           <Image
             src="/HeadshotEdit.jpg"
             alt="Jessie Boggs — Mortgage Loan Strategist"
@@ -187,7 +187,7 @@ export default function Home() {
             priority
           />
           {/* Floating NMLS card */}
-          <div style={{
+          <div className="hero-nmls-card" style={{
             position: 'absolute',
             bottom: '40px',
             left: '-185px',
@@ -294,7 +294,7 @@ export default function Home() {
 
       {/* ── WHY JESSIE ── */}
       <section style={{ background: '#FAF6F0', padding: '80px 52px' }}>
-        <div style={{
+        <div className="why-grid" style={{
           display: 'grid',
           gridTemplateColumns: '1fr 1fr',
           gap: '72px',
@@ -485,7 +485,7 @@ export default function Home() {
         </p>
 
         {/* Loan cards grid */}
-        <div style={{
+        <div className="loans-grid" style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(4, 1fr)',
           gap: '16px',
@@ -602,7 +602,7 @@ export default function Home() {
         </div>
 
         {/* Steps card */}
-        <div style={{
+        <div className="process-steps" style={{
           background: '#3D2E22',
           borderRadius: '16px',
           overflow: 'hidden',
@@ -640,7 +640,7 @@ export default function Home() {
               text: 'I stay in your corner from application to keys in hand. You\'ll always know exactly where your loan stands, no surprises, ever.',
             },
           ].map((step, i, arr) => (
-            <div key={step.step} style={{
+            <div key={step.step} className="process-step" style={{
               padding: '40px 36px',
               borderRight: i < arr.length - 1 ? '1px solid rgba(255,255,255,0.08)' : 'none',
               position: 'relative',
