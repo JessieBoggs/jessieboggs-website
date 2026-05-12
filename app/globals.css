@@ -255,6 +255,23 @@ body {
   .get-started-section {
     padding: 48px 24px !important;
   }
+  /* ── LOAN TYPES HUB ── */
+  .loan-types-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+/* ── LOAN PAGES ── */
+  .loan-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .loan-content-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+  .faq-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 
