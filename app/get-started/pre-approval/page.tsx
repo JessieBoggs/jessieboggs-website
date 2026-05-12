@@ -299,5 +299,5 @@ const selectStyle: React.CSSProperties = {
   border: '1.5px solid #E8DDD0', borderRadius: '8px',
   fontSize: '14px', color: '#2A2118',
   background: '#FAF6F0', outline: 'none',
-  fontFamily: 'inherit', appearance: 'none',
+  fontFamily: 'inherit', appearance: 'none' as const,
 };
