@@ -1391,7 +1391,10 @@ export default function Home() {
             }}>
               Jessie Boggs NMLS #2803455 | Licensed in Washington and Idaho |
               Powered by Edge Home Finance Corporation NMLS #891464 |
-              Loans in other states originated in partnership with Edge Home Finance&rsquo;s Client Care Team.&nbsp;
+              Loans in other states originated in partnership with Edge Home Finance&rsquo;s{' '}
+              <a href="https://edgehomefinance.com/team-member/client-care-team/" target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(212,196,176,0.38)', textDecoration: 'underline' }}>
+                Client Care Team
+              </a>.&nbsp;
               <a href="https://edgehomefinance.com/licensing-disclaimer/" target="_blank" style={{ color: 'rgba(212,196,176,0.38)', textDecoration: 'underline' }}>
                 Licensing Disclaimer
               </a>&nbsp;|&nbsp;
