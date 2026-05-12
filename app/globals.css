@@ -183,6 +183,50 @@ body {
     flex-direction: column !important;
     padding: 52px 24px !important;
   }
+  /* ── ABOUT PAGE ── */
+  .about-hero {
+    grid-template-columns: 1fr !important;
+    padding: 0 !important;
+  }
+  .about-hero-photo {
+    order: -1;
+    width: 100% !important;
+  }
+  .about-hero-photo img {
+    width: 100% !important;
+    height: 320px !important;
+    min-height: unset !important;
+  }
+  .about-hero-content {
+    padding: 40px 24px 52px !important;
+  }
+  .about-hero-content h1 {
+    font-size: 34px !important;
+  }
+  .about-story-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+  .about-story-photo {
+    height: 320px !important;
+  }
+  .about-strategist-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+  .about-creds-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .about-family-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+  .about-photos-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .about-cta-overlay h2 {
+    font-size: 28px !important;
+  }
 }
 
 
