@@ -25,7 +25,7 @@ export default function Header() {
           height={150}
           style={{
             width: 'auto',
-            height: '80px',
+            height: '130px',
             maxWidth: '100%',
             display: 'block',
           }}
