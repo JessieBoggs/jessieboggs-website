@@ -59,7 +59,8 @@ export default function Apply() {
                 fontSize: '14px', fontWeight: 700, padding: '15px 32px',
                 borderRadius: '6px', textDecoration: 'none',
                 boxShadow: '0 4px 16px rgba(184,92,56,0.28)',
-              }}>
+              }}
+            >
               Start Full Application
             </a>
             <a href="tel:2534178790" style={{
