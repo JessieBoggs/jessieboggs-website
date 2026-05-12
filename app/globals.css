@@ -272,6 +272,14 @@ body {
   .faq-grid {
     grid-template-columns: 1fr !important;
   }
+  /* ── BUYER PAGES ── */
+  .buyer-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .buyer-programs-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 
