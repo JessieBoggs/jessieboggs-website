@@ -26,6 +26,9 @@
   --text-body:      #4A3728;
   --text-muted:     #8C7B6E;
 }
+.header-logo-img {
+  height: 130px;
+}
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }

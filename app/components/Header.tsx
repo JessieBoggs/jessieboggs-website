@@ -24,9 +24,9 @@ export default function Header() {
             alt="Jessie Boggs — Mortgage Loan Strategist | Powered by Edge Home Finance"
             width={700}
             height={150}
+            className="header-logo-img"
             style={{
               width: 'auto',
-              height: '130px',
               maxWidth: '100%',
               display: 'block',
               cursor: 'pointer',
