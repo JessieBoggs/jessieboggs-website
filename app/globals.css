@@ -246,6 +246,11 @@ body {
   .header-logo-img {
     height: 60px !important;
   }
+  /* ── PRE-APPROVAL ── */
+  .preapproval-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
 }
 
 
