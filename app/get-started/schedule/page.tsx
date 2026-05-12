@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Schedule() {
   return (
     <>
-      <section style={{
+      <section className="get-started-section" style={{
         background: '#F2EBE0',
         padding: '72px 52px',
         position: 'relative',

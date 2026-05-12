@@ -251,6 +251,10 @@ body {
     grid-template-columns: 1fr !important;
     gap: 48px !important;
   }
+  /* ── GET STARTED PAGES ── */
+  .get-started-section {
+    padding: 48px 24px !important;
+  }
 }
 
 
