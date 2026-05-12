@@ -1,26 +1,37 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --parchment:      #F2EBE0;
+  --pearl:          #FAF6F0;
+  --espresso:       #2A2118;
+  --espresso-mid:   #3D2E22;
+  --espresso-light: #574236;
+  --terra:          #B85C38;
+  --terra-light:    #CC6E49;
+  --terra-pale:     #F5E8E1;
+  --terra-deep:     #8F4228;
+  --evergreen:      #3D6B5C;
+  --evergreen-mid:  #2E5245;
+  --evergreen-light:#4E8572;
+  --evergreen-pale: #E4F0EC;
+  --evergreen-deep: #1F3D32;
+  --tan:            #D4C4B0;
+  --tan-dark:       #A89278;
+  --tan-light:      #E8DDD0;
+  --warm-white:     #FFFCF8;
+  --text-body:      #4A3728;
+  --text-muted:     #8C7B6E;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--pearl);
+  color: var(--espresso);
+  -webkit-font-smoothing: antialiased;
 }
