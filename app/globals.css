@@ -239,6 +239,10 @@ body {
   .contact-links-grid {
     grid-template-columns: 1fr !important;
   }
+    /* ── HEADER LOGO ── */
+  .header-logo-img {
+    height: 80px !important;
+  }
 }
 
 

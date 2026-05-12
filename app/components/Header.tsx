@@ -18,19 +18,22 @@ export default function Header() {
         alignItems: 'center',
         justifyContent: 'center',
       }}>
-        <Image
-          src="/MeEdgeWebLogo.png"
-          alt="Jessie Boggs — Mortgage Loan Strategist | Powered by Edge Home Finance"
-          width={700}
-          height={150}
-          style={{
-            width: 'auto',
-            height: '130px',
-            maxWidth: '100%',
-            display: 'block',
-          }}
-          priority
-        />
+        <Link href="/">
+          <Image
+            src="/MeEdgeWebLogo.png"
+            alt="Jessie Boggs — Mortgage Loan Strategist | Powered by Edge Home Finance"
+            width={700}
+            height={150}
+            style={{
+              width: 'auto',
+              height: '130px',
+              maxWidth: '100%',
+              display: 'block',
+              cursor: 'pointer',
+            }}
+            priority
+          />
+        </Link>
       </div>
 
       {/* ── TIER 2: NAV BAR ── */}
