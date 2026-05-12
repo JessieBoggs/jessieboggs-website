@@ -312,6 +312,27 @@ body {
     width: 100% !important;
     margin-bottom: 20px !important;
   }
+  /* ── TOOLS ── */
+  .tools-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .calc-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .comparison-controls {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .comparison-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  /* ── CALC HERO ── */
+  .calc-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
 }
 
 
