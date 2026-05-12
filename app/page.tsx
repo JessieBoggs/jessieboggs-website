@@ -7,10 +7,9 @@ export default function Home() {
       {/* ── HERO ── */}
       <section style={{
         background: '#F2EBE0',
-        padding: '0 52px',
         display: 'grid',
         gridTemplateColumns: '1fr 420px',
-        minHeight: '580px',
+        minHeight: '560px',
         alignItems: 'stretch',
         position: 'relative',
         overflow: 'hidden',
@@ -23,13 +22,14 @@ export default function Home() {
           opacity: 0.045,
           backgroundImage: 'radial-gradient(circle, #2A2118 1px, transparent 1px)',
           backgroundSize: '24px 24px',
+          pointerEvents: 'none',
         }} />
 
-        {/* Terracotta blob right side */}
+        {/* Terracotta blob */}
         <div style={{
           position: 'absolute',
           top: 0, right: 0, bottom: 0,
-          width: '420px',
+          width: '380px',
           background: '#F5E8E1',
           zIndex: 0,
         }} />
@@ -41,33 +41,32 @@ export default function Home() {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          padding: '72px 40px 72px 0',
-          maxWidth: '560px',
+          padding: '64px 24px 64px 52px',
         }}>
           {/* Overline */}
           <div style={{
             fontSize: '11px',
             fontWeight: 700,
             letterSpacing: '0.16em',
-            textTransform: 'uppercase',
+            textTransform: 'uppercase' as const,
             color: '#B85C38',
             display: 'flex',
             alignItems: 'center',
             gap: '10px',
-            marginBottom: '22px',
+            marginBottom: '20px',
           }}>
-            <span style={{ width: '28px', height: '2px', background: '#B85C38', display: 'block' }} />
+            <span style={{ width: '28px', height: '2px', background: '#B85C38', display: 'block', flexShrink: 0 }} />
             Eastern WA &amp; North Idaho
           </div>
 
           {/* H1 */}
           <h1 style={{
-            fontSize: '60px',
+            fontSize: '58px',
             fontWeight: 800,
             color: '#2A2118',
             lineHeight: 1.02,
             letterSpacing: '-0.03em',
-            marginBottom: '22px',
+            marginBottom: '20px',
           }}>
             The loan officer<br />
             who actually<br />
@@ -79,22 +78,47 @@ export default function Home() {
             fontSize: '16px',
             color: '#4A3728',
             lineHeight: 1.75,
-            maxWidth: '460px',
-            marginBottom: '36px',
+            maxWidth: '100%',
+            marginBottom: '32px',
           }}>
-            I&rsquo;m not here to just get you a loan. I&rsquo;m here to find the right
-            strategy that sets your family up for{' '}
+            I&rsquo;m not here to just get you a loan. I&rsquo;m here to find
+            the right strategy that sets your family up for{' '}
             <strong style={{ color: '#2A2118', fontWeight: 700 }}>
               the life you actually want.
             </strong>
           </p>
 
           {/* Buttons */}
-          <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginBottom: '48px' }}>
-            <Link href="/get-started/pre-approval" className="btn-terra">
+          <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginBottom: '44px' }}>
+            <Link href="/get-started/pre-approval" style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              background: '#B85C38',
+              color: '#FFFCF8',
+              fontSize: '14px',
+              fontWeight: 700,
+              letterSpacing: '0.01em',
+              padding: '14px 30px',
+              borderRadius: '6px',
+              textDecoration: 'none',
+              boxShadow: '0 4px 16px rgba(184,92,56,0.28)',
+              transition: 'all 0.2s',
+            }}>
               Get Pre-Approved
             </Link>
-            <Link href="/get-started/schedule" className="btn-ghost">
+            <Link href="/get-started/schedule" style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              background: 'transparent',
+              color: '#2A2118',
+              fontSize: '14px',
+              fontWeight: 700,
+              padding: '13px 28px',
+              borderRadius: '6px',
+              border: '2px solid #2A2118',
+              textDecoration: 'none',
+              transition: 'all 0.2s',
+            }}>
               Schedule a Call
             </Link>
           </div>
@@ -102,34 +126,35 @@ export default function Home() {
           {/* Stats */}
           <div style={{
             display: 'flex',
-            gap: '32px',
+            gap: '28px',
             paddingTop: '28px',
             borderTop: '1px solid #D4C4B0',
+            flexWrap: 'wrap',
           }}>
             {[
-              { num: '20+', label: 'Yrs Experience' },
-              { num: '8+',  label: 'Loan Programs' },
-              { num: '47+', label: 'States Available' },
-              { num: '5★',  label: 'Rated Service' },
+              { num: '20+', accent: '+', base: '20', label: 'Yrs Experience' },
+              { num: '8+',  accent: '+', base: '8',  label: 'Loan Programs' },
+              { num: '5',   accent: '★', base: '5',  label: 'Star Rated' },
+              { num: 'WA & ID', accent: '', base: 'WA & ID', label: 'Licensed States' },
             ].map((stat, i, arr) => (
-              <div key={stat.label} style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
+              <div key={stat.label} style={{ display: 'flex', alignItems: 'center', gap: '28px' }}>
                 <div>
                   <div style={{
-                    fontSize: '32px',
+                    fontSize: '30px',
                     fontWeight: 800,
                     color: '#2A2118',
                     lineHeight: 1,
-                    letterSpacing: '-0.03em',
+                    letterSpacing: '-0.02em',
                   }}>
-                    <span>{stat.num.replace(/[+★]/, '')}</span>
-                    <span style={{ color: '#B85C38' }}>{stat.num.match(/[+★]/)?.[0]}</span>
+                    {stat.base}
+                    <span style={{ color: '#B85C38' }}>{stat.accent}</span>
                   </div>
                   <div style={{
                     fontSize: '10px',
                     fontWeight: 600,
                     color: '#8C7B6E',
                     letterSpacing: '0.07em',
-                    textTransform: 'uppercase',
+                    textTransform: 'uppercase' as const,
                     marginTop: '3px',
                   }}>
                     {stat.label}
@@ -148,14 +173,14 @@ export default function Home() {
           <Image
             src="/HeadshotEdit.jpg"
             alt="Jessie Boggs — Mortgage Loan Strategist"
-            width={420}
-            height={580}
+            width={380}
+            height={560}
             style={{
-              width: '420px',
+              width: '380px',
               height: '100%',
-              minHeight: '580px',
+              minHeight: '560px',
               objectFit: 'cover',
-              objectPosition: 'center 15%',
+              objectPosition: 'center top',
               display: 'block',
               flexShrink: 0,
             }}
@@ -165,19 +190,19 @@ export default function Home() {
           <div style={{
             position: 'absolute',
             bottom: '40px',
-            left: '-200px',
+            left: '-185px',
             zIndex: 4,
             background: '#FFFCF8',
             borderRadius: '10px',
-            padding: '16px 20px',
+            padding: '14px 18px',
             boxShadow: '0 8px 32px rgba(42,33,24,0.18)',
             borderLeft: '4px solid #3D6B5C',
-            minWidth: '185px',
+            minWidth: '175px',
           }}>
-            <div style={{ fontSize: '11px', fontWeight: 700, color: '#3D6B5C', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '4px' }}>
+            <div style={{ fontSize: '10px', fontWeight: 700, color: '#3D6B5C', letterSpacing: '0.08em', textTransform: 'uppercase' as const, marginBottom: '3px' }}>
               NMLS Licensed
             </div>
-            <div style={{ fontSize: '22px', fontWeight: 800, color: '#2A2118', letterSpacing: '-0.02em', lineHeight: 1 }}>
+            <div style={{ fontSize: '20px', fontWeight: 800, color: '#2A2118', letterSpacing: '-0.02em', lineHeight: 1 }}>
               #2803455
             </div>
             <div style={{ fontSize: '10px', color: '#8C7B6E', fontWeight: 500, marginTop: '2px' }}>
@@ -189,12 +214,7 @@ export default function Home() {
         {/* Mobile styles */}
         <style>{`
           @media (max-width: 768px) {
-            section { grid-template-columns: 1fr !important; padding: 0 !important; min-height: unset !important; }
-            section > div:last-child { order: -1; }
-            section > div:last-child img { width: 100% !important; height: 320px !important; min-height: unset !important; object-position: center 20% !important; }
-            section > div:nth-child(4) { padding: 40px 24px 52px !important; max-width: 100% !important; }
-            section > div:nth-child(4) h1 { font-size: 36px !important; }
-            section > div:nth-child(4) > div:last-child { gap: 16px !important; flex-wrap: wrap !important; }
+            .hero-section { grid-template-columns: 1fr !important; padding: 0 !important; }
           }
         `}</style>
       </section>
@@ -218,7 +238,7 @@ export default function Home() {
           <div key={item} style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '7px' }}>
               <div style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#B85C38', flexShrink: 0 }} />
-              <span style={{ fontSize: '10px', fontWeight: 600, color: '#D4C4B0', letterSpacing: '0.07em', textTransform: 'uppercase' }}>
+              <span style={{ fontSize: '10px', fontWeight: 600, color: '#D4C4B0', letterSpacing: '0.07em', textTransform: 'uppercase' as const }}>
                 {item}
               </span>
             </div>
@@ -241,21 +261,24 @@ export default function Home() {
         gap: '20px',
         flexWrap: 'wrap',
       }}>
-        {[
-          { num: '5.0', label: 'Star Rating' },
-          { num: '20+', label: 'Yrs Experience' },
-          { num: '47+', label: 'States Available' },
-          { num: '8+',  label: 'Loan Programs' },
-          { num: '$0',  label: 'Down — VA & USDA' },
+{[
+          { icon: '⚡', label: 'Same-Day Pre-Approvals' },
+          { icon: '🏡', label: '$0 Down - VA & USDA' },
+          { icon: '🔨', label: 'Construction & Renovation Loans' },
+          { icon: '🤝', label: 'No Pressure Consultations' },
         ].map((item, i, arr) => (
           <div key={item.label} style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-            <div style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '28px', fontWeight: 800, color: '#B85C38', letterSpacing: '-0.02em', lineHeight: 1 }}>
-                {item.num}
-              </div>
-              <div style={{ fontSize: '10px', fontWeight: 600, color: '#4A3728', letterSpacing: '0.07em', textTransform: 'uppercase' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <span style={{ fontSize: '20px' }}>{item.icon}</span>
+              <span style={{
+                fontSize: '13px',
+                fontWeight: 700,
+                color: '#4A3728',
+                letterSpacing: '0.04em',
+                textTransform: 'uppercase' as const,
+              }}>
                 {item.label}
-              </div>
+              </span>
             </div>
             {i < arr.length - 1 && (
               <div style={{ width: '1px', height: '36px', background: '#D4C4B0' }} />
@@ -263,6 +286,168 @@ export default function Home() {
           </div>
         ))}
       </div>
-    </>
+    {/* ── WAVE DIVIDER ── */}
+      <svg viewBox="0 0 1440 56" preserveAspectRatio="none"
+        style={{ width: '100%', height: '56px', display: 'block', marginBottom: '-2px', background: '#F5E8E1', fill: '#FAF6F0' }}>
+        <path d="M0,0 C360,56 1080,56 1440,0 L1440,56 L0,56 Z" />
+      </svg>
+
+      {/* ── WHY JESSIE ── */}
+      <section style={{ background: '#FAF6F0', padding: '80px 52px' }}>
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          gap: '72px',
+          alignItems: 'center',
+        }}>
+          {/* Photo left */}
+          <div style={{ position: 'relative' }}>
+            <Image
+              src="/HeadshotEdit.jpg"
+              alt="Jessie Boggs"
+              width={560}
+              height={500}
+              style={{
+                width: '100%',
+                height: '500px',
+                objectFit: 'cover',
+                objectPosition: 'center top',
+                borderRadius: '16px',
+                boxShadow: '16px 16px 60px rgba(42,33,24,0.14)',
+                display: 'block',
+              }}
+            />
+            {/* Badge */}
+            <div style={{
+              position: 'absolute',
+              bottom: '-20px',
+              right: '-20px',
+              background: '#3D6B5C',
+              color: '#FFFCF8',
+              padding: '20px 24px',
+              borderRadius: '12px',
+              boxShadow: '0 8px 32px rgba(61,107,92,0.35)',
+              textAlign: 'center',
+            }}>
+              <div style={{ fontSize: '34px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: 1 }}>
+                20+
+              </div>
+              <div style={{
+                fontSize: '10px',
+                fontWeight: 600,
+                letterSpacing: '0.07em',
+                textTransform: 'uppercase' as const,
+                color: 'rgba(255,255,255,0.75)',
+                marginTop: '4px',
+                lineHeight: 1.4,
+              }}>
+                Years in Sales<br />&amp; Construction
+              </div>
+              <div style={{ width: '32px', height: '3px', background: 'rgba(255,255,255,0.35)', borderRadius: '2px', margin: '8px auto 0' }} />
+            </div>
+          </div>
+
+          {/* Content right */}
+          <div>
+            {/* Overline */}
+            <div style={{
+              fontSize: '11px',
+              fontWeight: 700,
+              letterSpacing: '0.16em',
+              textTransform: 'uppercase' as const,
+              color: '#B85C38',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '10px',
+              marginBottom: '14px',
+            }}>
+              <span style={{ width: '28px', height: '2px', background: '#B85C38', display: 'block', flexShrink: 0 }} />
+              Why work with me
+            </div>
+
+            {/* Heading */}
+            <h2 style={{
+              fontSize: '44px',
+              fontWeight: 800,
+              color: '#2A2118',
+              lineHeight: 1.06,
+              letterSpacing: '-0.025em',
+              marginBottom: '16px',
+            }}>
+              Built different.<br />
+              <span style={{ color: '#B85C38' }}>By design.</span>
+            </h2>
+
+            <p style={{
+              fontSize: '15px',
+              color: '#4A3728',
+              lineHeight: 1.78,
+              marginBottom: '28px',
+            }}>
+              Most loan officers know mortgages. I know mortgages{' '}
+              <em>and</em>{' '} I know homes. What a project actually costs,
+              what&rsquo;s behind the walls, and which questions protect
+              you at every step of the process.
+            </p>
+
+            {/* Value prop cards */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+              {[
+                {
+                  icon: '📈',
+                  bg: '#F5E8E1',
+                  title: '20+ Years in Sales & Business',
+                  text: 'From top-performing rep at two of the largest companies in the country to running a $15M construction company. I know how to work for you and how to get deals done.',
+                },
+                {
+                  icon: '🏠',
+                  bg: '#E4F0EC',
+                  title: 'A Decade in Home Remodeling',
+                  text: 'Nearly 10 years in residential remodeling means I understand homes at a level most loan officers never will. I look at a property the way a contractor does.',
+                },
+                {
+                  icon: '📞',
+                  bg: '#F5E8E1',
+                  title: 'Personal Communication, Always',
+                  text: 'When you call, you get me, not a call center. Real answers, fast responses, and a loan officer who actually picks up the phone when you call.',
+                },
+              ].map((prop) => (
+                <div key={prop.title} style={{
+                  display: 'flex',
+                  gap: '16px',
+                  alignItems: 'flex-start',
+                  padding: '20px 22px',
+                  background: '#FFFCF8',
+                  borderRadius: '12px',
+                  border: '1px solid #E8DDD0',
+                  boxShadow: '0 2px 12px rgba(42,33,24,0.05)',
+                }}>
+                  <div style={{
+                    width: '44px',
+                    height: '44px',
+                    borderRadius: '10px',
+                    background: prop.bg,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '20px',
+                    flexShrink: 0,
+                  }}>
+                    {prop.icon}
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '14px', fontWeight: 700, color: '#2A2118', marginBottom: '5px' }}>
+                      {prop.title}
+                    </div>
+                    <div style={{ fontSize: '13px', color: '#4A3728', lineHeight: 1.65 }}>
+                      {prop.text}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section></>
   );
 }
