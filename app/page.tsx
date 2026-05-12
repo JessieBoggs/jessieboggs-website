@@ -477,9 +477,9 @@ export default function Home() {
 
         <p style={{
           fontSize: '15px', color: 'rgba(250,246,240,0.72)', lineHeight: 1.78,
-          maxWidth: '560px', marginBottom: '44px',
+          maxWidth: '545px', marginBottom: '44px',
         }}>
-          From your first home to your forever home — and every unique situation
+          From your first home to your forever home and every unique situation
           in between. I don&rsquo;t just hand you the most common product.
           I find the right one for your life.
         </p>
@@ -569,6 +569,110 @@ export default function Home() {
       <style>{`
           .loan-card-link { transition: transform 0.2s, box-shadow 0.2s; }
           .loan-card-link:hover { transform: translateY(-6px); box-shadow: 0 18px 48px rgba(42,33,24,0.16) !important; }
-        `}</style></section></>
+        `}</style></section>
+        {/* ── WAVE DIVIDER ── */}
+      <svg viewBox="0 0 1440 56" preserveAspectRatio="none"
+        style={{ width: '100%', height: '56px', display: 'block', marginBottom: '-2px', background: '#2A2118', fill: '#F2EBE0' }}>
+        <path d="M0,0 C360,56 1080,56 1440,0 L1440,56 L0,56 Z" />
+      </svg>
+
+      {/* ── PROCESS ── */}
+      <section style={{ background: '#F2EBE0', padding: '80px 52px' }}>
+        {/* Header centered */}
+        <div style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 52px' }}>
+          <div style={{
+            fontSize: '11px', fontWeight: 700, letterSpacing: '0.16em',
+            textTransform: 'uppercase' as const, color: '#3D6B5C',
+            display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginBottom: '14px',
+          }}>
+            <span style={{ width: '28px', height: '2px', background: '#3D6B5C', display: 'block', flexShrink: 0 }} />
+            The process
+            <span style={{ width: '28px', height: '2px', background: '#3D6B5C', display: 'block', flexShrink: 0 }} />
+          </div>
+          <h2 style={{
+            fontSize: '44px', fontWeight: 800, color: '#2A2118',
+            lineHeight: 1.06, letterSpacing: '-0.025em', marginBottom: '16px',
+          }}>
+            Simple. Straightforward.{' '}
+            <span style={{ color: '#3D6B5C' }}>Yours.</span>
+          </h2>
+          <p style={{ fontSize: '15px', color: '#4A3728', lineHeight: 1.75 }}>
+            From our first conversation to keys in hand. Here&rsquo;s how it works when you work with me.
+          </p>
+        </div>
+
+        {/* Steps card */}
+        <div style={{
+          background: '#3D2E22',
+          borderRadius: '16px',
+          overflow: 'hidden',
+          boxShadow: '0 20px 60px rgba(42,33,24,0.25)',
+          display: 'grid',
+          gridTemplateColumns: 'repeat(3, 1fr)',
+          position: 'relative',
+        }}>
+          {/* Top gradient bar */}
+          <div style={{
+            position: 'absolute', top: 0, left: 0, right: 0, height: '4px',
+            background: 'linear-gradient(90deg, #B85C38, #3D6B5C, #B85C38)',
+          }} />
+
+          {[
+            {
+              step: '01',
+              pillBg: 'rgba(184,92,56,0.2)', pillColor: '#F5E8E1',
+              label: 'Step 01',
+              title: 'Connect & Strategize',
+              text: 'We talk through your goals, timeline, and situation. No jargon, no pressure, just a real conversation about what\'s possible for your family right now.',
+            },
+            {
+              step: '02',
+              pillBg: 'rgba(61,107,92,0.3)', pillColor: '#8FCBBF',
+              label: 'Step 02',
+              title: 'Get Pre-Approved',
+              text: 'Fast pre-approvals that give you a genuine competitive edge. Know your buying power before you fall in love with a home.',
+            },
+            {
+              step: '03',
+              pillBg: 'rgba(184,92,56,0.2)', pillColor: '#F5E8E1',
+              label: 'Step 03',
+              title: 'Close with Confidence',
+              text: 'I stay in your corner from application to keys in hand. You\'ll always know exactly where your loan stands, no surprises, ever.',
+            },
+          ].map((step, i, arr) => (
+            <div key={step.step} style={{
+              padding: '40px 36px',
+              borderRight: i < arr.length - 1 ? '1px solid rgba(255,255,255,0.08)' : 'none',
+              position: 'relative',
+            }}>
+              {/* Big background number */}
+              <div style={{
+                fontSize: '80px', fontWeight: 800,
+                color: 'rgba(250,246,240,0.25)',
+                lineHeight: 1, letterSpacing: '-0.05em',
+                marginBottom: '4px',
+              }}>
+                {step.step}
+              </div>
+              {/* Pill */}
+              <div style={{
+                display: 'inline-block', fontSize: '10px', fontWeight: 700,
+                letterSpacing: '0.12em', textTransform: 'uppercase' as const,
+                padding: '5px 12px', borderRadius: '20px', marginBottom: '14px',
+                background: step.pillBg, color: step.pillColor,
+              }}>
+                {step.label}
+              </div>
+              <div style={{ fontSize: '17px', fontWeight: 700, color: '#FFFCF8', marginBottom: '10px' }}>
+                {step.title}
+              </div>
+              <div style={{ fontSize: '13px', color: 'rgba(250,246,240,0.62)', lineHeight: 1.72 }}>
+                {step.text}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+        </>
   );
 }
