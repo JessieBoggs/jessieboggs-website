@@ -5,7 +5,7 @@ export default function About() {
   return (
     <>
       {/* ── HERO ── */}
-      <section style={{
+      <section className="about-hero" style={{
         background: '#F2EBE0',
         padding: '0',
         display: 'grid',
@@ -23,7 +23,7 @@ export default function About() {
         }} />
 
         {/* Left content */}
-        <div style={{
+        <div className="about-hero-content" style={{
           position: 'relative', zIndex: 3,
           display: 'flex', flexDirection: 'column', justifyContent: 'center',
           padding: '72px 52px',
@@ -74,7 +74,7 @@ export default function About() {
         </div>
 
         {/* Right -- hero photo */}
-        <div style={{ position: 'relative', zIndex: 3, display: 'flex', alignItems: 'stretch' }}>
+        <div className="about-hero-photo" style={{ position: 'relative', zIndex: 3, display: 'flex', alignItems: 'stretch' }}>
           <Image
             src="/MeStandingOutside.png"
             alt="Jessie Boggs — Mortgage Loan Strategist"
@@ -98,7 +98,7 @@ export default function About() {
 
       {/* ── MY STORY ── */}
       <section style={{ background: '#FAF6F0', padding: '80px 52px' }}>
-        <div style={{
+        <div className="about-story-grid" style={{
           display: 'grid', gridTemplateColumns: '1fr 1fr',
           gap: '72px', alignItems: 'flex-start',
         }}>
@@ -109,6 +109,7 @@ export default function About() {
               alt="Jessie Boggs sitting outside"
               width={560}
               height={600}
+              className="about-story-photo"
               style={{
                 width: '100%', height: '540px',
                 objectFit: 'cover', objectPosition: 'center 20%',
@@ -180,7 +181,7 @@ export default function About() {
 
       {/* ── THE STRATEGIST DIFFERENCE ── */}
       <section style={{ background: '#2A2118', padding: '80px 52px' }}>
-        <div style={{
+        <div className="about-strategist-grid" style={{
           display: 'grid', gridTemplateColumns: '1fr 1fr',
           gap: '72px', alignItems: 'center',
         }}>
@@ -218,7 +219,7 @@ export default function About() {
           </div>
 
           {/* Credentials grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>
+          <div className="about-creds-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>
             {[
               { num: '20+', label: 'Years in Sales & Business', icon: '📈' },
               { num: '10+', label: 'Years in Home Remodeling', icon: '🏠' },
@@ -257,12 +258,12 @@ export default function About() {
 
       {/* ── FAMILY SECTION ── */}
       <section style={{ background: '#1F3D32', padding: '80px 52px' }}>
-        <div style={{
+        <div className="about-family-grid" style={{
           display: 'grid', gridTemplateColumns: '1fr 1fr',
           gap: '72px', alignItems: 'center',
         }}>
           {/* Photos grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>
+          <div className="about-photos-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>
             {/* Rainier mountain shot -- large */}
             <div style={{ gridColumn: '1 / -1' }}>
               <Image
@@ -357,7 +358,7 @@ export default function About() {
           style={{ objectFit: 'cover', objectPosition: 'center 60%' }}
         />
         {/* Overlay */}
-        <div style={{
+        <div className="about-cta-overlay" style={{
           position: 'absolute', inset: 0,
           background: 'rgba(42,33,24,0.55)',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
