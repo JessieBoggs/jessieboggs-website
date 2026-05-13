@@ -246,8 +246,8 @@ export default function Home() {
               </span>
             </div>
             {i < arr.length - 1 && (
-              <div style={{ width: '1px', height: '14px', background: 'rgba(255,255,255,0.1)' }} />
-            )}
+                <div className="cred-divider" style={{ width: '1px', height: '14px', background: 'rgba(255,255,255,0.1)' }} />
+              )}
           </div>
         ))}
       </div>
@@ -283,8 +283,8 @@ export default function Home() {
                 {item.label}
               </span>
             </div>
-            {i < arr.length - 1 && (
-              <div style={{ width: '1px', height: '36px', background: '#D4C4B0' }} />
+          {i < arr.length - 1 && (
+              <div className="proof-divider" style={{ width: '1px', height: '36px', background: '#D4C4B0' }} />
             )}
           </div>
         ))}

@@ -301,10 +301,12 @@ body {
     display: none !important;
   }
 
-  /* ── CREDENTIAL BAR ── */
+/* ── CREDENTIAL BAR ── */
   .cred-bar {
-    padding: 12px 20px !important;
+    padding: 10px 16px !important;
     justify-content: center !important;
+    gap: 8px !important;
+    flex-wrap: wrap !important;
   }
   .cred-divider {
     display: none !important;
@@ -312,10 +314,12 @@ body {
 
   /* ── PROOF STRIP ── */
   .proof-strip {
-    padding: 20px !important;
-    gap: 12px !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
+    padding: 16px 20px !important;
+    gap: 10px 20px !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
   }
   .proof-divider {
     display: none !important;
