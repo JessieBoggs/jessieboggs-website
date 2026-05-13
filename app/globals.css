@@ -333,6 +333,34 @@ body {
     grid-template-columns: 1fr !important;
     gap: 40px !important;
   }
+  /* ── RESOURCES ── */
+  .resources-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .resources-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .resources-cta-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+  /* ── ARTICLE PAGES ── */
+  .article-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+  .resources-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .resources-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .resources-cta-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
 }
 
 
