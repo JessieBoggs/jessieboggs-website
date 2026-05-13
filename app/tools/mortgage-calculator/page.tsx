@@ -101,35 +101,84 @@ export default function MortgageCalculator() {
             }}>Get Pre-Approved</Link>
           </div>
 
-          {/* Right -- live rates widget */}
-          <div>
+          {/* Right -- lender collage */}
+          <div style={{
+            background: '#FFFCF8', borderRadius: '16px', padding: '32px',
+            border: '1px solid #E8DDD0',
+            boxShadow: '0 8px 40px rgba(42,33,24,0.08)',
+            borderTop: '4px solid #3D6B5C',
+          }}>
+            {/* Headline */}
+            <div style={{ textAlign: 'center' as const, marginBottom: '24px' }}>
+              <div style={{
+                fontSize: '48px', fontWeight: 800, color: '#2A2118',
+                letterSpacing: '-0.03em', lineHeight: 1,
+              }}>
+                150<span style={{ color: '#B85C38' }}>+</span>
+              </div>
+              <div style={{
+                fontSize: '13px', fontWeight: 700, color: '#2A2118',
+                letterSpacing: '0.06em', textTransform: 'uppercase' as const,
+                marginTop: '4px',
+              }}>
+                Lender Partners
+              </div>
+              <p style={{
+                fontSize: '12px', color: '#8C7B6E', lineHeight: 1.6,
+                marginTop: '8px',
+              }}>
+                Access to over 150 lenders means I can shop your loan
+                across the market and find you the best rate and product for your situation.
+              </p>
+            </div>
+
+            {/* Logo grid */}
             <div style={{
-              background: '#FFFCF8', borderRadius: '16px', padding: '24px',
-              border: '1px solid #E8DDD0',
-              boxShadow: '0 8px 40px rgba(42,33,24,0.08)',
-              borderTop: '4px solid #3D6B5C',
+              display: 'grid',
+              gridTemplateColumns: 'repeat(3, 1fr)',
+              gap: '12px',
+              marginBottom: '20px',
             }}>
-              <div style={{ fontSize: '13px', fontWeight: 700, color: '#2A2118', marginBottom: '4px' }}>
-                Today&rsquo;s Average Mortgage Rates
-              </div>
-              <div style={{ fontSize: '11px', color: '#8C7B6E', marginBottom: '16px' }}>
-                Updated regularly by MortgageCalculator.org
-              </div>
-              <iframe
-                src="//www.mortgagecalculator.org/rates-widgets/mortgages/text-widget.php?latest"
-                frameBorder={0}
-                scrolling="no"
-                style={{
-                  border: 0,
-                  overflow: 'hidden',
-                  width: '100%',
-                  height: '220px',
-                  display: 'block',
-                }}
-              />
-              <div style={{ fontSize: '10px', color: '#8C7B6E', marginTop: '8px', textAlign: 'center' as const }}>
-                Powered by <a href="https://www.mortgagecalculator.org" target="_blank" rel="noopener noreferrer" style={{ color: '#8C7B6E' }}>MortgageCalculator.org</a>
-              </div>
+              {[
+                { src: '/UWMLogo.png', alt: 'United Wholesale Mortgage' },
+                { src: '/PennyMacLogo.png', alt: 'PennyMac' },
+                { src: '/NewrezLogo.png', alt: 'Newrez' },
+                { src: '/DeepHavenLogo.png', alt: 'Deephaven' },
+                { src: '/AngelOakLogo.png', alt: 'Angel Oak Mortgage Solutions' },
+                { src: '/WindsorLogo.png', alt: 'Windsor Mortgage' },
+              ].map((logo) => (
+                <div key={logo.alt} style={{
+                  background: '#FAF6F0',
+                  borderRadius: '8px',
+                  padding: '12px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  border: '1px solid #E8DDD0',
+                  height: '56px',
+                }}>
+                  <img
+                    src={logo.src}
+                    alt={logo.alt}
+                    style={{
+                      maxHeight: '50px',
+                      maxWidth: '100%',
+                      width: 'auto',
+                      objectFit: 'contain',
+                    }}
+                  />
+                </div>
+              ))}
+            </div>
+
+            <div style={{
+              background: '#F2EBE0', borderRadius: '8px', padding: '12px 16px',
+              textAlign: 'center' as const,
+            }}>
+              <p style={{ fontSize: '12px', color: '#4A3728', lineHeight: 1.6 }}>
+                I shop your loan across my full lender network so you get
+                the most competitive product and rate available for your profile.
+              </p>
             </div>
           </div>
         </div>
