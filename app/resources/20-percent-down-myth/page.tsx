@@ -79,7 +79,7 @@ export default function TwentyPercentDownMyth() {
             ))}
             <div style={{ borderTop: '1px solid #E8DDD0', paddingTop: '24px', marginTop: '48px' }}>
               <p style={{ fontSize: '11px', color: '#8C7B6E', lineHeight: 1.7 }}>
-                Jessie Boggs, NMLS #2803455. Licensed in Washington and Idaho. Powered by Edge Home Finance Corporation, NMLS #891464. This article is for informational purposes only and does not constitute financial advice or a commitment to lend.
+                Jessie Boggs, NMLS #2803455. Licensed in Washington and Idaho. Powered by Edge Home Finance, LLC, NMLS #891464. This article is for informational purposes only and does not constitute financial advice or a commitment to lend.
               </p>
             </div>
           </article>

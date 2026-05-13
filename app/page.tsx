@@ -234,7 +234,7 @@ export default function Home() {
         {[
           'NMLS #2803455',
           'Licensed in WA & ID',
-          'Equal Housing Lender',
+          'Equal Housing Opportunity',
           'Powered by Edge Home Finance',
           'Spokane • CDA • Eastern WA',
         ].map((item, i, arr) => (
@@ -1280,7 +1280,6 @@ export default function Home() {
 
       {/* ── FOOTER ── */}
       <footer style={{ background: '#3D2E22', padding: '64px 52px 28px', position: 'relative' }}>
-        {/* Subtle grid texture */}
         <div style={{
           position: 'absolute', inset: 0, zIndex: 0, opacity: 0.025, pointerEvents: 'none',
           backgroundImage: 'repeating-linear-gradient(0deg, #FAF6F0 0px, transparent 1px, transparent 4px), repeating-linear-gradient(90deg, #FAF6F0 0px, transparent 1px, transparent 4px)',
@@ -1310,12 +1309,11 @@ export default function Home() {
                 20+ years in sales and residential construction.
                 Built different, by design.
               </p>
-              {/* Social icons */}
               <div style={{ display: 'flex', gap: '10px' }}>
                 {[
-                  { label: 'Facebook', href: 'https://facebook.com/jboggsofficial', letter: 'f' },
-                  { label: 'Instagram', href: 'https://instagram.com/jboggsofficial', letter: 'ig' },
-                  { label: 'LinkedIn', href: 'https://linkedin.com/in/jboggsofficial/', letter: 'in' },
+                  { label: 'Facebook', href: 'https://facebook.com', letter: 'f' },
+                  { label: 'Instagram', href: 'https://instagram.com', letter: 'ig' },
+                  { label: 'LinkedIn', href: 'https://linkedin.com', letter: 'in' },
                   { label: 'YouTube', href: 'https://youtube.com', letter: 'yt' },
                 ].map((s) => (
                   <a key={s.label} href={s.href} aria-label={s.label} style={{
@@ -1396,17 +1394,14 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Footer bottom */}
-          <div style={{
-            display: 'flex', alignItems: 'flex-start',
-            justifyContent: 'space-between', gap: '20px', flexWrap: 'wrap',
-          }}>
+          {/* Footer bottom -- compliance */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
             <p style={{
               fontSize: '10px', color: 'rgba(212,196,176,0.38)',
               lineHeight: 1.9, maxWidth: '620px',
             }}>
               Jessie Boggs NMLS #2803455 | Licensed in Washington and Idaho |
-              Powered by Edge Home Finance Corporation NMLS #891464 |
+              Powered by Edge Home Finance, LLC NMLS #891464 |
               Loans in other states originated in partnership with Edge Home Finance&rsquo;s{' '}
               <a href="https://edgehomefinance.com/team-member/client-care-team/" target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(212,196,176,0.38)', textDecoration: 'underline' }}>
                 Client Care Team
@@ -1427,16 +1422,36 @@ export default function Home() {
               &copy; 2026 Jessie Boggs. All rights reserved.
               This is not a commitment to lend. All loans subject to approval.
             </p>
-            <Image
-              src="/2_-_Equal_Housing_Opportunity_Logo__1_.png"
-              alt="Equal Housing Opportunity"
-              width={60}
-              height={60}
-              style={{ opacity: 0.22, filter: 'grayscale(1) brightness(2)', flexShrink: 0 }}
-            />
+
+            {/* Equal Housing Opportunity */}
+            <div style={{
+              display: 'flex', alignItems: 'center', gap: '12px',
+              paddingTop: '16px',
+              borderTop: '1px solid rgba(255,255,255,0.06)',
+            }}>
+              <Image
+                src="/EqualHousingOpportunity.png"
+                alt="Equal Housing Opportunity"
+                width={36}
+                height={36}
+                style={{
+                  opacity: 0.38,
+                  filter: 'brightness(0) invert(1)',
+                  width: '36px',
+                  height: '36px',
+                  objectFit: 'contain',
+                }}
+              />
+              <p style={{
+                fontSize: '10px', color: 'rgba(212,196,176,0.38)', lineHeight: 1.7,
+              }}>
+                Equal Housing Opportunity. We do not discriminate on the basis of race,
+                color, national origin, religion, sex, familial status, or disability.
+              </p>
+            </div>
           </div>
         </div>
-      </footer>  
-        </>
+      </footer>
+    </>
   );
 }
