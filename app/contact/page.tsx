@@ -85,73 +85,23 @@ export default function Contact() {
               Fill out the form and I will get back to you within one business day.
             </p>
 
-            <form style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
-                <div>
-                  <label style={{ fontSize: '11px', fontWeight: 700, color: '#2A2118', letterSpacing: '0.07em', textTransform: 'uppercase' as const, display: 'block', marginBottom: '5px' }}>
-                    First Name
-                  </label>
-                  <input type="text" placeholder="First name" style={{ width: '100%', padding: '11px 13px', border: '1.5px solid #E8DDD0', borderRadius: '8px', fontSize: '14px', color: '#2A2118', background: '#FAF6F0', outline: 'none', fontFamily: 'inherit' }} />
-                </div>
-                <div>
-                  <label style={{ fontSize: '11px', fontWeight: 700, color: '#2A2118', letterSpacing: '0.07em', textTransform: 'uppercase' as const, display: 'block', marginBottom: '5px' }}>
-                    Last Name
-                  </label>
-                  <input type="text" placeholder="Last name" style={{ width: '100%', padding: '11px 13px', border: '1.5px solid #E8DDD0', borderRadius: '8px', fontSize: '14px', color: '#2A2118', background: '#FAF6F0', outline: 'none', fontFamily: 'inherit' }} />
-                </div>
-              </div>
-
-              <div>
-                <label style={{ fontSize: '11px', fontWeight: 700, color: '#2A2118', letterSpacing: '0.07em', textTransform: 'uppercase' as const, display: 'block', marginBottom: '5px' }}>
-                  Phone Number
-                </label>
-                <input type="tel" placeholder="(253) 555-0100" style={{ width: '100%', padding: '11px 13px', border: '1.5px solid #E8DDD0', borderRadius: '8px', fontSize: '14px', color: '#2A2118', background: '#FAF6F0', outline: 'none', fontFamily: 'inherit' }} />
-              </div>
-
-              <div>
-                <label style={{ fontSize: '11px', fontWeight: 700, color: '#2A2118', letterSpacing: '0.07em', textTransform: 'uppercase' as const, display: 'block', marginBottom: '5px' }}>
-                  Email Address
-                </label>
-                <input type="email" placeholder="you@email.com" style={{ width: '100%', padding: '11px 13px', border: '1.5px solid #E8DDD0', borderRadius: '8px', fontSize: '14px', color: '#2A2118', background: '#FAF6F0', outline: 'none', fontFamily: 'inherit' }} />
-              </div>
-
-              <div>
-                <label style={{ fontSize: '11px', fontWeight: 700, color: '#2A2118', letterSpacing: '0.07em', textTransform: 'uppercase' as const, display: 'block', marginBottom: '5px' }}>
-                  How can I help?
-                </label>
-                <select style={{ width: '100%', padding: '11px 13px', border: '1.5px solid #E8DDD0', borderRadius: '8px', fontSize: '14px', color: '#2A2118', background: '#FAF6F0', outline: 'none', fontFamily: 'inherit', appearance: 'none' as const }}>
-                  <option value="">Select an option</option>
-                  <option value="purchase">I want to purchase a home</option>
-                  <option value="refinance">I want to refinance</option>
-                  <option value="preapproval">I need a pre-approval</option>
-                  <option value="construction">Construction or renovation loan</option>
-                  <option value="agent">I am a real estate agent</option>
-                  <option value="question">I have a general question</option>
-                </select>
-              </div>
-
-              <div>
-                <label style={{ fontSize: '11px', fontWeight: 700, color: '#2A2118', letterSpacing: '0.07em', textTransform: 'uppercase' as const, display: 'block', marginBottom: '5px' }}>
-                  Message
-                </label>
-                <textarea placeholder="Tell me a little about your situation..." rows={4} style={{ width: '100%', padding: '11px 13px', border: '1.5px solid #E8DDD0', borderRadius: '8px', fontSize: '14px', color: '#2A2118', background: '#FAF6F0', outline: 'none', fontFamily: 'inherit', resize: 'vertical' as const }} />
-              </div>
-
-              <button type="submit" style={{
-                background: '#B85C38', color: '#FFFCF8',
-                fontSize: '14px', fontWeight: 700, padding: '14px',
-                borderRadius: '8px', border: 'none', cursor: 'pointer',
-                letterSpacing: '0.02em', width: '100%',
-                boxShadow: '0 4px 16px rgba(184,92,56,0.28)',
-              }}>
-                Send Message
-              </button>
-
-              <p style={{ fontSize: '11px', color: '#8C7B6E', textAlign: 'center' as const, lineHeight: 1.6 }}>
-                By submitting this form you agree to be contacted regarding your mortgage inquiry.
-                Your information will never be sold or shared.
-              </p>
-            </form>
+            <iframe
+              src="https://api.leadconnectorhq.com/widget/form/QyFr72RXjknIOeuVjnhU"
+              style={{ width: '100%', height: '950px', border: 'none', borderRadius: '8px' }}
+              id="inline-QyFr72RXjknIOeuVjnhU"
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="JB-Site-ContactForm"
+              data-height="950"
+              data-layout-iframe-id="inline-QyFr72RXjknIOeuVjnhU"
+              data-form-id="QyFr72RXjknIOeuVjnhU"
+              title="JB-Site-ContactForm"
+            />
           </div>
         </div>
       </section>

@@ -14,9 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+<body>
         <Header />
         <main>{children}</main>
+        <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript" defer={true} />
       </body>
     </html>
   );

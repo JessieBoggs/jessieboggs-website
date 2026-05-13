@@ -96,87 +96,23 @@ export default function Referral() {
               Your information and your client's information stay between us.
             </p>
 
-            <form style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-              <div style={{
-                background: '#F5E8E1', borderRadius: '8px', padding: '14px 16px',
-                fontSize: '12px', fontWeight: 700, color: '#8F4228',
-                letterSpacing: '0.06em', textTransform: 'uppercase' as const,
-              }}>
-                Your Information
-              </div>
-
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
-                <div>
-                  <label style={labelStyle}>Your Name</label>
-                  <input type="text" placeholder="Agent name" style={inputStyle} />
-                </div>
-                <div>
-                  <label style={labelStyle}>Your Phone</label>
-                  <input type="tel" placeholder="(253) 555-0100" style={inputStyle} />
-                </div>
-              </div>
-              <div>
-                <label style={labelStyle}>Your Email</label>
-                <input type="email" placeholder="agent@realty.com" style={inputStyle} />
-              </div>
-
-              <div style={{
-                background: '#E4F0EC', borderRadius: '8px', padding: '14px 16px',
-                fontSize: '12px', fontWeight: 700, color: '#2E5245',
-                letterSpacing: '0.06em', textTransform: 'uppercase' as const,
-              }}>
-                Client Information
-              </div>
-
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
-                <div>
-                  <label style={labelStyle}>Client Name</label>
-                  <input type="text" placeholder="Client name" style={inputStyle} />
-                </div>
-                <div>
-                  <label style={labelStyle}>Client Phone</label>
-                  <input type="tel" placeholder="(253) 555-0100" style={inputStyle} />
-                </div>
-              </div>
-
-              <div>
-                <label style={labelStyle}>Client Email</label>
-                <input type="email" placeholder="client@email.com" style={inputStyle} />
-              </div>
-
-              <div>
-                <label style={labelStyle}>Loan Type / Situation</label>
-                <select style={selectStyle}>
-                  <option value="">Select an option</option>
-                  <option value="purchase">Purchase</option>
-                  <option value="firsttime">First-time buyer</option>
-                  <option value="va">VA Loan</option>
-                  <option value="usda">USDA Rural</option>
-                  <option value="construction">Construction or Renovation</option>
-                  <option value="refinance">Refinance</option>
-                  <option value="notsure">Not sure yet</option>
-                </select>
-              </div>
-
-              <div>
-                <label style={labelStyle}>Additional Notes</label>
-                <textarea
-                  placeholder="Any details about your client's situation I should know..."
-                  rows={3}
-                  style={{ ...inputStyle, resize: 'vertical' as const }}
-                />
-              </div>
-
-              <button type="submit" style={{
-                background: '#B85C38', color: '#FFFCF8',
-                fontSize: '14px', fontWeight: 700, padding: '14px',
-                borderRadius: '8px', border: 'none', cursor: 'pointer',
-                fontFamily: 'inherit', width: '100%',
-                boxShadow: '0 4px 16px rgba(184,92,56,0.28)',
-              }}>
-                Submit Referral
-              </button>
-            </form>
+            <iframe
+              src="https://api.leadconnectorhq.com/widget/form/YPxJVt9CQHHPSn8ABJef"
+              style={{ width: '100%', height: '1134px', border: 'none', borderRadius: '8px' }}
+              id="inline-YPxJVt9CQHHPSn8ABJef"
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="JB-Website-AgentReferral"
+              data-height="1134"
+              data-layout-iframe-id="inline-YPxJVt9CQHHPSn8ABJef"
+              data-form-id="YPxJVt9CQHHPSn8ABJef"
+              title="JB-Website-AgentReferral"
+            />
           </div>
         </div>
       </section>

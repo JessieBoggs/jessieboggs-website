@@ -1,19 +1,16 @@
-import Link from 'next/link';
 export const metadata = {
   title: 'Schedule a Call | Jessie Boggs Mortgage Loan Strategist',
   description: 'Schedule a call with Jessie Boggs, NMLS #2803455. Talk through your mortgage options with a loan strategist who knows Eastern WA and North Idaho.',
 };
+
 export default function Schedule() {
   return (
     <>
-      <section className="get-started-section" style={{
+      <section style={{
         background: '#F2EBE0',
         padding: '72px 52px',
         position: 'relative',
         overflow: 'hidden',
-        minHeight: '60vh',
-        display: 'flex',
-        alignItems: 'center',
       }}>
         <div style={{
           position: 'absolute', inset: 0, zIndex: 1, opacity: 0.045,
@@ -37,50 +34,33 @@ export default function Schedule() {
             <span style={{ color: '#B85C38' }}>to talk.</span>
           </h1>
           <p style={{
-            fontSize: '16px', color: '#4A3728', lineHeight: 1.75, marginBottom: '36px',
+            fontSize: '16px', color: '#4A3728', lineHeight: 1.75,
           }}>
             Pick a time that works for you and I will call you at the scheduled time.
             No pressure, no commitment. Just a real conversation about your goals
             and what is possible.
           </p>
+        </div>
+      </section>
 
-          {/* Calendar placeholder */}
-          <div style={{
-            background: '#FFFCF8', borderRadius: '16px', padding: '40px',
-            border: '1px solid #E8DDD0',
-            boxShadow: '0 8px 40px rgba(42,33,24,0.08)',
-            marginBottom: '32px', textAlign: 'center' as const,
-          }}>
-            <div style={{ fontSize: '48px', marginBottom: '16px' }}>📅</div>
-            <div style={{ fontSize: '18px', fontWeight: 800, color: '#2A2118', marginBottom: '8px' }}>
-              Calendar Booking Coming Soon
-            </div>
-            <p style={{ fontSize: '14px', color: '#8C7B6E', lineHeight: 1.65, marginBottom: '24px' }}>
-              Online scheduling through Surge.IO is being set up.
-              In the meantime, call or text me directly to find a time that works.
-            </p>
-            <a href="tel:2534178790" style={{
-              display: 'inline-flex', alignItems: 'center',
-              background: '#B85C38', color: '#FFFCF8',
-              fontSize: '14px', fontWeight: 700, padding: '14px 28px',
-              borderRadius: '6px', textDecoration: 'none',
-              boxShadow: '0 4px 16px rgba(184,92,56,0.28)',
-            }}>
-              Call (253) 417-8790
-            </a>
-          </div>
+      <svg viewBox="0 0 1440 56" preserveAspectRatio="none"
+        style={{ width: '100%', height: '56px', display: 'block', marginBottom: '-2px', background: '#F2EBE0', fill: '#FAF6F0' }}>
+        <path d="M0,56 C480,0 960,0 1440,56 L1440,56 L0,56 Z" />
+      </svg>
 
-          <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
-            <Link href="/get-started/pre-approval" style={{
-              display: 'inline-flex', alignItems: 'center',
-              background: 'transparent', color: '#2A2118',
-              fontSize: '14px', fontWeight: 700, padding: '13px 28px',
-              borderRadius: '6px', textDecoration: 'none',
-              border: '2px solid #2A2118',
-            }}>
-              Get Pre-Approved Instead
-            </Link>
-          </div>
+      <section style={{ background: '#FAF6F0', padding: '52px 52px 80px' }}>
+        <div style={{
+          background: '#FFFCF8', borderRadius: '16px', padding: '40px',
+          border: '1px solid #E8DDD0',
+          boxShadow: '0 8px 40px rgba(42,33,24,0.08)',
+          maxWidth: '900px', margin: '0 auto',
+        }}>
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/booking/MlE2IBvzsE7ezSXvpLKU"
+            style={{ width: '100%', border: 'none', overflow: 'hidden', minHeight: '700px', borderRadius: '8px' }}
+            scrolling="no"
+            id="MlE2IBvzsE7ezSXvpLKU_1778685969358"
+          />
         </div>
       </section>
     </>

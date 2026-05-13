@@ -155,127 +155,23 @@ export default function PreApproval() {
               No commitment required. I will follow up within one business day.
             </p>
 
-            <form style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
-                <div>
-                  <label style={labelStyle}>First Name</label>
-                  <input type="text" placeholder="First name" style={inputStyle} />
-                </div>
-                <div>
-                  <label style={labelStyle}>Last Name</label>
-                  <input type="text" placeholder="Last name" style={inputStyle} />
-                </div>
-              </div>
-
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
-                <div>
-                  <label style={labelStyle}>Phone</label>
-                  <input type="tel" placeholder="(253) 555-0100" style={inputStyle} />
-                </div>
-                <div>
-                  <label style={labelStyle}>Email</label>
-                  <input type="email" placeholder="you@email.com" style={inputStyle} />
-                </div>
-              </div>
-
-              <div>
-                <label style={labelStyle}>Loan Type Interest</label>
-                <select style={selectStyle}>
-                  <option value="">Select a loan type</option>
-                  <option value="conventional">Conventional</option>
-                  <option value="va">VA Loan</option>
-                  <option value="usda">USDA Rural</option>
-                  <option value="fha">FHA</option>
-                  <option value="construction">Construction</option>
-                  <option value="renovation">Renovation</option>
-                  <option value="jumbo">Jumbo</option>
-                  <option value="selfemployed">Self-Employed</option>
-                  <option value="notsure">Not sure yet</option>
-                </select>
-              </div>
-
-              <div>
-                <label style={labelStyle}>Estimated Purchase Price</label>
-                <select style={selectStyle}>
-                  <option value="">Select a range</option>
-                  <option value="under200">Under $200,000</option>
-                  <option value="200to300">$200,000 to $300,000</option>
-                  <option value="300to400">$300,000 to $400,000</option>
-                  <option value="400to500">$400,000 to $500,000</option>
-                  <option value="500to600">$500,000 to $600,000</option>
-                  <option value="over600">Over $600,000</option>
-                </select>
-              </div>
-
-              <div>
-                <label style={labelStyle}>Estimated Down Payment</label>
-                <select style={selectStyle}>
-                  <option value="">Select a range</option>
-                  <option value="zero">$0 (VA or USDA)</option>
-                  <option value="under5">Less than 5%</option>
-                  <option value="5to10">5% to 10%</option>
-                  <option value="10to20">10% to 20%</option>
-                  <option value="over20">20% or more</option>
-                </select>
-              </div>
-
-              <div>
-                <label style={labelStyle}>Estimated Credit Score</label>
-                <select style={selectStyle}>
-                  <option value="">Select a range</option>
-                  <option value="under580">Below 580</option>
-                  <option value="580to620">580 to 620</option>
-                  <option value="620to680">620 to 680</option>
-                  <option value="680to740">680 to 740</option>
-                  <option value="over740">740 and above</option>
-                </select>
-              </div>
-
-              <div>
-                <label style={labelStyle}>Purchase Timeline</label>
-                <select style={selectStyle}>
-                  <option value="">Select a timeline</option>
-                  <option value="asap">As soon as possible</option>
-                  <option value="1to3">1 to 3 months</option>
-                  <option value="3to6">3 to 6 months</option>
-                  <option value="6to12">6 to 12 months</option>
-                  <option value="exploring">Just exploring options</option>
-                </select>
-              </div>
-
-              <div>
-                <label style={labelStyle}>First-time homebuyer?</label>
-                <select style={selectStyle}>
-                  <option value="">Select one</option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </div>
-
-              <div>
-                <label style={labelStyle}>Anything else I should know?</label>
-                <textarea
-                  placeholder="Tell me about your situation or any questions you have..."
-                  rows={3}
-                  style={{ ...inputStyle, resize: 'vertical' as const }}
-                />
-              </div>
-
-              <button type="submit" style={{
-                background: '#B85C38', color: '#FFFCF8',
-                fontSize: '14px', fontWeight: 700, padding: '15px',
-                borderRadius: '8px', border: 'none', cursor: 'pointer',
-                letterSpacing: '0.02em', width: '100%',
-                boxShadow: '0 4px 16px rgba(184,92,56,0.28)',
-              }}>
-                Submit Pre-Approval Request
-              </button>
-
-              <p style={{ fontSize: '11px', color: '#8C7B6E', textAlign: 'center' as const, lineHeight: 1.6 }}>
-                By submitting this form you agree to be contacted regarding your
-                mortgage inquiry. Your information will never be sold or shared.
-              </p>
-            </form>
+            <iframe
+              src="https://api.leadconnectorhq.com/widget/form/l8Nq4MuTLfRjedbe4GwT"
+              style={{ width: '100%', height: '1412px', border: 'none', borderRadius: '8px' }}
+              id="inline-l8Nq4MuTLfRjedbe4GwT"
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="JB-Website-PreApprovalForm"
+              data-height="1412"
+              data-layout-iframe-id="inline-l8Nq4MuTLfRjedbe4GwT"
+              data-form-id="l8Nq4MuTLfRjedbe4GwT"
+              title="JB-Website-PreApprovalForm"
+            />
           </div>
         </div>
       </section>

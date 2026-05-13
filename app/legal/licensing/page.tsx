@@ -1,135 +1,63 @@
-export const metadata = {
-  title: 'Licensing & Disclosures | Jessie Boggs NMLS #2803455',
-  description: 'Licensing and disclosure information for Jessie Boggs NMLS #2803455. Licensed in Washington and Idaho. Powered by Edge Home Finance Corporation NMLS #891464.',
-};
-export default function Licensing() {
+export default function Schedule() {
   return (
-    <section style={{
-      background: '#FAF6F0', padding: '72px 52px',
-      minHeight: '60vh',
-    }}>
-      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+    <>
+      <section style={{
+        background: '#F2EBE0',
+        padding: '72px 52px',
+        position: 'relative',
+        overflow: 'hidden',
+      }}>
         <div style={{
-          fontSize: '11px', fontWeight: 700, letterSpacing: '0.16em',
-          textTransform: 'uppercase' as const, color: '#B85C38',
-          display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px',
-        }}>
-          <span style={{ width: '28px', height: '2px', background: '#B85C38', display: 'block', flexShrink: 0 }} />
-          Legal
-        </div>
-        <h1 style={{
-          fontSize: '44px', fontWeight: 800, color: '#2A2118',
-          letterSpacing: '-0.025em', marginBottom: '8px',
-        }}>
-          Licensing & Disclosures
-        </h1>
-        <p style={{ fontSize: '13px', color: '#8C7B6E', marginBottom: '48px' }}>
-          Last updated: May 2026
-        </p>
-
-        {/* License info cards */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginBottom: '48px' }}>
+          position: 'absolute', inset: 0, zIndex: 1, opacity: 0.045,
+          backgroundImage: 'radial-gradient(circle, #2A2118 1px, transparent 1px)',
+          backgroundSize: '24px 24px', pointerEvents: 'none',
+        }} />
+        <div style={{ position: 'relative', zIndex: 2, maxWidth: '640px' }}>
           <div style={{
-            background: '#FFFCF8', borderRadius: '12px', padding: '28px',
-            border: '1px solid #E8DDD0', borderLeft: '4px solid #B85C38',
-            boxShadow: '0 2px 12px rgba(42,33,24,0.05)',
+            fontSize: '11px', fontWeight: 700, letterSpacing: '0.16em',
+            textTransform: 'uppercase' as const, color: '#B85C38',
+            display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px',
           }}>
-            <h2 style={{ fontSize: '18px', fontWeight: 800, color: '#2A2118', marginBottom: '16px' }}>
-              Loan Originator
-            </h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              {[
-                { label: 'Name', value: 'Jessie Boggs' },
-                { label: 'NMLS ID', value: '#2803455' },
-                { label: 'Licensed States', value: 'Washington, Idaho' },
-                { label: 'Email', value: 'Jessie.Boggs@EdgeHomeFinance.com' },
-                { label: 'Phone', value: '(253) 417-8790' },
-              ].map((item) => (
-                <div key={item.label} style={{ display: 'flex', gap: '16px', fontSize: '14px' }}>
-                  <span style={{ fontWeight: 700, color: '#2A2118', minWidth: '140px' }}>{item.label}:</span>
-                  <span style={{ color: '#4A3728' }}>{item.value}</span>
-                </div>
-              ))}
-            </div>
+            <span style={{ width: '28px', height: '2px', background: '#B85C38', display: 'block', flexShrink: 0 }} />
+            Schedule a call
           </div>
-
-          <div style={{
-            background: '#FFFCF8', borderRadius: '12px', padding: '28px',
-            border: '1px solid #E8DDD0', borderLeft: '4px solid #3D6B5C',
-            boxShadow: '0 2px 12px rgba(42,33,24,0.05)',
+          <h1 style={{
+            fontSize: '52px', fontWeight: 800, color: '#2A2118',
+            lineHeight: 1.04, letterSpacing: '-0.03em', marginBottom: '20px',
           }}>
-            <h2 style={{ fontSize: '18px', fontWeight: 800, color: '#2A2118', marginBottom: '16px' }}>
-              Powered By
-            </h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              {[
-                { label: 'Company', value: 'Edge Home Finance Corporation' },
-                { label: 'NMLS ID', value: '#891464' },
-                { label: 'Website', value: 'edgehomefinance.com' },
-              ].map((item) => (
-                <div key={item.label} style={{ display: 'flex', gap: '16px', fontSize: '14px' }}>
-                  <span style={{ fontWeight: 700, color: '#2A2118', minWidth: '140px' }}>{item.label}:</span>
-                  <span style={{ color: '#4A3728' }}>{item.value}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+            Let&rsquo;s find a time<br />
+            <span style={{ color: '#B85C38' }}>to talk.</span>
+          </h1>
+          <p style={{
+            fontSize: '16px', color: '#4A3728', lineHeight: 1.75, marginBottom: '0',
+          }}>
+            Pick a time that works for you and I will call you at the scheduled time.
+            No pressure, no commitment. Just a real conversation about your goals
+            and what is possible.
+          </p>
         </div>
+      </section>
 
-        {[
-          {
-            title: 'State Licensing',
-            text: 'Jessie Boggs NMLS #2803455 is licensed to originate mortgage loans in Washington and Idaho. Loans originated in other states are processed in partnership with Edge Home Finance\'s Client Care Team.',
-          },
-          {
-            title: 'Equal Housing Lender',
-            text: 'We are an Equal Housing Lender. We do not discriminate on the basis of race, color, national origin, religion, sex, familial status, or disability in accordance with the Fair Housing Act.',
-          },
-          {
-            title: 'NMLS Consumer Access',
-            text: 'You can verify licensing information for Jessie Boggs and Edge Home Finance Corporation through the Nationwide Mortgage Licensing System at nmlsconsumeraccess.org.',
-          },
-          {
-            title: 'Not a Commitment to Lend',
-            text: 'All information on this website is for informational purposes only. This is not a commitment to lend. All loan applications are subject to credit approval, income verification, and property appraisal. Terms and conditions apply.',
-          },
-        ].map((section) => (
-          <div key={section.title} style={{ marginBottom: '32px' }}>
-            <h2 style={{
-              fontSize: '18px', fontWeight: 800, color: '#2A2118',
-              letterSpacing: '-0.01em', marginBottom: '10px',
-            }}>
-              {section.title}
-            </h2>
-            <p style={{ fontSize: '15px', color: '#4A3728', lineHeight: 1.8 }}>
-              {section.text}
-            </p>
-          </div>
-        ))}
+      <svg viewBox="0 0 1440 56" preserveAspectRatio="none"
+        style={{ width: '100%', height: '56px', display: 'block', marginBottom: '-2px', background: '#F2EBE0', fill: '#FAF6F0' }}>
+        <path d="M0,56 C480,0 960,0 1440,56 L1440,56 L0,56 Z" />
+      </svg>
 
-        {/* External links */}
+      <section style={{ background: '#FAF6F0', padding: '52px 52px 80px' }}>
         <div style={{
-          background: '#2A2118', borderRadius: '12px', padding: '28px',
-          display: 'flex', flexDirection: 'column', gap: '14px',
+          background: '#FFFCF8', borderRadius: '16px', padding: '40px',
+          border: '1px solid #E8DDD0',
+          boxShadow: '0 8px 40px rgba(42,33,24,0.08)',
+          maxWidth: '900px', margin: '0 auto',
         }}>
-          <h2 style={{ fontSize: '18px', fontWeight: 800, color: '#FFFCF8', marginBottom: '4px' }}>
-            Important Links
-          </h2>
-          {[
-            { label: 'Edge Home Finance Licensing Disclaimer', href: 'https://edgehomefinance.com/licensing-disclaimer/' },
-            { label: 'NMLS Consumer Access', href: 'https://www.nmlsconsumeraccess.org' },
-            { label: 'Edge Home Finance Client Care Team', href: 'https://edgehomefinance.com/team-member/client-care-team/' },
-          ].map((link) => (
-            <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" style={{
-              display: 'inline-flex', alignItems: 'center', gap: '8px',
-              color: '#8FCBBF', fontSize: '14px', fontWeight: 600,
-              textDecoration: 'none',
-            }}>
-              {link.label} →
-            </a>
-          ))}
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/booking/MlE2IBvzsE7ezSXvpLKU"
+            style={{ width: '100%', border: 'none', overflow: 'hidden', minHeight: '700px', borderRadius: '8px' }}
+            scrolling="no"
+            id="MlE2IBvzsE7ezSXvpLKU_1778685969358"
+          />
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
