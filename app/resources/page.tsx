@@ -1,5 +1,8 @@
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'Mortgage Resources & Market Updates Eastern WA | Jessie Boggs',
+  description: 'Mortgage education, market updates, and buyer guides for Eastern Washington and North Idaho. Written by Jessie Boggs NMLS #2803455.',
+};
 export default function Resources() {
   return (
     <>

@@ -1,5 +1,8 @@
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'Schedule a Call | Jessie Boggs Mortgage Loan Strategist',
+  description: 'Schedule a call with Jessie Boggs, NMLS #2803455. Talk through your mortgage options with a loan strategist who knows Eastern WA and North Idaho.',
+};
 export default function Schedule() {
   return (
     <>

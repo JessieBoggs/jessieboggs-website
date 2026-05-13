@@ -1,5 +1,8 @@
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'Contact Jessie Boggs | Mortgage Loan Strategist Eastern WA',
+  description: 'Get in touch with Jessie Boggs, NMLS #2803455. Call (253) 417-8790 or send a message. Serving Eastern Washington and North Idaho. Same-day responses.',
+};
 export default function Contact() {
   return (
     <>

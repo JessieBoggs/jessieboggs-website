@@ -1,5 +1,8 @@
 import BuyerPage from '../../components/BuyerPage';
-
+export const metadata = {
+  title: 'VA Home Loans for Veterans Eastern WA & North Idaho | Jessie Boggs',
+  description: 'VA home loans for veterans in Eastern Washington and North Idaho. You earned this benefit. Let me make sure you get every dollar of it. Jessie Boggs NMLS #2803455.',
+};
 export default function Veterans() {
   return (
     <BuyerPage

@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'Jessie Boggs | Mortgage Loan Strategist — Eastern WA & North Idaho',
+  description: 'Jessie Boggs, NMLS #2803455. Mortgage loan strategist serving Eastern Washington and North Idaho. VA, USDA, FHA, Conventional, and Construction loans. Call (253) 417-8790.',
+};
 export default function Home() {
   return (
     <>

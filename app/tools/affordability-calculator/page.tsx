@@ -2,7 +2,10 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'Home Affordability Calculator Eastern WA | Jessie Boggs NMLS #2803455',
+  description: 'Find out how much home you can afford in Eastern Washington and North Idaho. Free affordability calculator. No email required. Jessie Boggs NMLS #2803455.',
+};
 export default function AffordabilityCalculator() {
   const [annualIncome, setAnnualIncome] = useState(80000);
   const [monthlyDebts, setMonthlyDebts] = useState(500);

@@ -1,5 +1,8 @@
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'Refer a Client | Jessie Boggs Mortgage Loan Strategist NMLS #2803455',
+  description: 'Refer a buyer to Jessie Boggs. Same-day response, proactive updates, and a loan officer who treats your clients like his own. NMLS #2803455.',
+};
 export default function Referral() {
   return (
     <>

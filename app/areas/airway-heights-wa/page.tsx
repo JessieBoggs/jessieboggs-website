@@ -1,5 +1,8 @@
 import AreaPage from '../../components/AreaPage';
-
+export const metadata = {
+  title: 'Home Loans in Airway Heights WA | Jessie Boggs NMLS #2803455',
+  description: 'Mortgage loans in Airway Heights, Washington near Fairchild AFB. VA loan specialist. FHA, Conventional, and USDA. Jessie Boggs NMLS #2803455.',
+};
 export default function AirwayHeightsWA() {
   return (
     <AreaPage

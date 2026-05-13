@@ -1,5 +1,8 @@
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'Mortgage Lender Eastern WA & North Idaho | Jessie Boggs NMLS #2803455',
+  description: 'Serving communities across Eastern Washington and North Idaho. Local mortgage expertise, direct communication. Jessie Boggs NMLS #2803455. Licensed WA & ID.',
+};
 export default function Areas() {
   return (
     <>

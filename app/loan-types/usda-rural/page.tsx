@@ -1,5 +1,8 @@
 import LoanPage from '../../components/LoanPage';
-
+export const metadata = {
+  title: 'USDA Rural Home Loans Eastern WA & North Idaho | Jessie Boggs',
+  description: 'USDA zero down home loans in Eastern Washington and North Idaho. More areas qualify than you think. Jessie Boggs NMLS #2803455. Call (253) 417-8790.',
+};
 export default function USDARural() {
   return (
     <LoanPage

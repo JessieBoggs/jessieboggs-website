@@ -1,5 +1,8 @@
 import AreaPage from '../../components/AreaPage';
-
+export const metadata = {
+  title: 'Home Loans in Newport WA | Jessie Boggs Mortgage NMLS #2803455',
+  description: 'Mortgage loans in Newport, Washington and Pend Oreille County. USDA zero down available throughout the county. Jessie Boggs NMLS #2803455.',
+};
 export default function NewportWA() {
   return (
     <AreaPage

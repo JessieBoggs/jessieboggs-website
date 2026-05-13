@@ -1,5 +1,8 @@
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'Get Pre-Approved | Jessie Boggs Mortgage Eastern WA & North Idaho',
+  description: 'Start your mortgage pre-approval with Jessie Boggs, NMLS #2803455. Same-day pre-approvals. Serving Eastern Washington and North Idaho. No pressure, no commitment.',
+};
 export default function PreApproval() {
   return (
     <>

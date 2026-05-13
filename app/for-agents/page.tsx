@@ -1,5 +1,8 @@
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'For Real Estate Agents | Partner With Jessie Boggs NMLS #2803455',
+  description: 'A mortgage partner who makes you look good. Same-day pre-approvals, proactive communication, and construction expertise. Jessie Boggs NMLS #2803455 Eastern WA & ID.',
+};
 export default function ForAgents() {
   return (
     <>

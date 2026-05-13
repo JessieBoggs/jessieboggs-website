@@ -1,5 +1,8 @@
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'What Rising Rates Mean for Eastern WA Buyers | Jessie Boggs',
+  description: 'Honest take on what rising mortgage rates mean for buyers in Eastern Washington right now. Written by Jessie Boggs NMLS #2803455.',
+};
 export default function RisingRatesEasternWA() {
   return (
     <>

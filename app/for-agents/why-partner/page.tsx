@@ -1,5 +1,8 @@
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'Why Partner With Jessie Boggs | Mortgage Loan Strategist Eastern WA',
+  description: 'Learn what makes working with Jessie Boggs different. Same-day pre-approvals, construction expertise, and communication you can count on. NMLS #2803455.',
+};
 export default function WhyPartner() {
   return (
     <>

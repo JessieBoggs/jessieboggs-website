@@ -1,5 +1,8 @@
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'Home Buyer Guides Eastern WA & North Idaho | Jessie Boggs',
+  description: 'Mortgage guidance for every type of buyer in Eastern Washington and North Idaho. First-time buyers, veterans, rural buyers, move-up buyers. Jessie Boggs NMLS #2803455.',
+};
 export default function Buyers() {
   return (
     <>

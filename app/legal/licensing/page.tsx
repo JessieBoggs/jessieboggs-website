@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'Licensing & Disclosures | Jessie Boggs NMLS #2803455',
+  description: 'Licensing and disclosure information for Jessie Boggs NMLS #2803455. Licensed in Washington and Idaho. Powered by Edge Home Finance Corporation NMLS #891464.',
+};
 export default function Licensing() {
   return (
     <section style={{

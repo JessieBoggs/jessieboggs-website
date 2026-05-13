@@ -1,5 +1,8 @@
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'Client Reviews | Jessie Boggs Mortgage Loan Strategist NMLS #2803455',
+  description: '5-star rated mortgage loan strategist in Eastern Washington and North Idaho. Read client reviews and see what working with Jessie Boggs looks like.',
+};
 export default function Reviews() {
   return (
     <>

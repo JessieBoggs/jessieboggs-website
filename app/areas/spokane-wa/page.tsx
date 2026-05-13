@@ -1,5 +1,8 @@
 import AreaPage from '../../components/AreaPage';
-
+export const metadata = {
+  title: 'Home Loans in Spokane WA | Jessie Boggs Mortgage NMLS #2803455',
+  description: 'Mortgage loans in Spokane, Washington. VA, USDA, FHA, Conventional, and Construction loans. Same-day pre-approvals. Jessie Boggs NMLS #2803455.',
+};
 export default function SpokaneWA() {
   return (
     <AreaPage

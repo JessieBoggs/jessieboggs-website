@@ -1,5 +1,8 @@
 import LoanPage from '../../components/LoanPage';
-
+export const metadata = {
+  title: 'Construction & Renovation Loans Eastern WA | Jessie Boggs',
+  description: 'Construction and renovation loans in Eastern Washington and North Idaho. Built by someone with a decade in residential construction. Jessie Boggs NMLS #2803455.',
+};
 export default function ConstructionRenovation() {
   return (
     <LoanPage

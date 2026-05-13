@@ -1,5 +1,8 @@
 import AreaPage from '../../components/AreaPage';
-
+export const metadata = {
+  title: 'Home Loans in Post Falls ID | Jessie Boggs Mortgage NMLS #2803455',
+  description: 'Mortgage loans in Post Falls, Idaho. FHA, VA, USDA, and Conventional programs. Licensed in Idaho. Jessie Boggs NMLS #2803455. Call (253) 417-8790.',
+};
 export default function PostFallsID() {
   return (
     <AreaPage

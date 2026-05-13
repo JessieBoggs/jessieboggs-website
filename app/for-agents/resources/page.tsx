@@ -1,5 +1,8 @@
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'Agent Resources | Jessie Boggs Mortgage Eastern WA & North Idaho',
+  description: 'Market updates, buyer guides, and shareable content for real estate agents in Eastern Washington and North Idaho. Jessie Boggs NMLS #2803455.',
+};
 export default function AgentResources() {
   return (
     <>

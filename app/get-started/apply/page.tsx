@@ -1,5 +1,8 @@
 import Link from 'next/link'
-
+export const metadata = {
+  title: 'Apply Now | Jessie Boggs — Edge Home Finance NMLS #2803455',
+  description: 'Start your full mortgage application with Jessie Boggs, NMLS #2803455. Powered by Edge Home Finance. Licensed in Washington and Idaho.',
+};
 export default function Apply() {
   const sectionStyle = {
     background: '#F2EBE0',

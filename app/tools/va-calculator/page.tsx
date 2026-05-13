@@ -2,7 +2,10 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'VA Funding Fee Calculator Eastern WA & North Idaho | Jessie Boggs',
+  description: 'Calculate your VA funding fee and monthly payment. Free VA loan calculator for veterans in Eastern Washington and North Idaho. Jessie Boggs NMLS #2803455.',
+};
 export default function VACalculator() {
   const [purchasePrice, setPurchasePrice] = useState(350000);
   const [downPayment, setDownPayment] = useState(0);

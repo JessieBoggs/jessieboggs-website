@@ -1,5 +1,8 @@
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'VA Loan Advantage: Best Deal in Mortgage | Jessie Boggs NMLS #2803455',
+  description: 'Why the VA loan is still the best mortgage deal available for veterans. Zero down, no PMI, competitive rates. Written by Jessie Boggs NMLS #2803455.',
+};
 export default function VALoanAdvantage() {
   return (
     <>

@@ -1,5 +1,8 @@
 import BuyerPage from '../../components/BuyerPage';
-
+export const metadata = {
+  title: 'First-Time Home Buyer Loans Eastern WA & North Idaho | Jessie Boggs',
+  description: 'First-time home buyer loans in Eastern Washington and North Idaho. FHA, USDA, and down payment assistance programs. Jessie Boggs NMLS #2803455. No pressure.',
+};
 export default function FirstTimeBuyers() {
   return (
     <BuyerPage

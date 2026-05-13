@@ -1,5 +1,8 @@
 import LoanPage from '../../components/LoanPage';
-
+export const metadata = {
+  title: 'FHA Home Loans Eastern WA & North Idaho | Jessie Boggs NMLS #2803455',
+  description: 'FHA mortgage loans in Eastern Washington and North Idaho. Down payments as low as 3.5%. Flexible credit requirements. Jessie Boggs NMLS #2803455.',
+};
 export default function FHALoans() {
   return (
     <LoanPage

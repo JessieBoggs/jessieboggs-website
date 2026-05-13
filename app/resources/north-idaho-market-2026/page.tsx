@@ -1,5 +1,8 @@
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'North Idaho Real Estate Market 2026 | Jessie Boggs NMLS #2803455',
+  description: 'What buyers need to know about the North Idaho real estate market in 2026. Coeur d\'Alene, Post Falls, Sandpoint, and more. Jessie Boggs NMLS #2803455.',
+};
 export default function NorthIdahoMarket2026() {
   return (
     <>

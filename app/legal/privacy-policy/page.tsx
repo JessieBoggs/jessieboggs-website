@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'Privacy Policy | Jessie Boggs Mortgage NMLS #2803455',
+  description: 'Privacy policy for jessieboggs.com. Jessie Boggs NMLS #2803455. Powered by Edge Home Finance Corporation NMLS #891464.',
+};
 export default function PrivacyPolicy() {
   return (
     <section style={{

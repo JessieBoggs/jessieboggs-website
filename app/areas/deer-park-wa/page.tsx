@@ -1,5 +1,8 @@
 import AreaPage from '../../components/AreaPage';
-
+export const metadata = {
+  title: 'Home Loans in Deer Park WA | Jessie Boggs Mortgage NMLS #2803455',
+  description: 'Mortgage loans in Deer Park, Washington. USDA zero down available. Construction loans, FHA, and Conventional. Jessie Boggs NMLS #2803455.',
+};
 export default function DeerParkWA() {
   return (
     <AreaPage

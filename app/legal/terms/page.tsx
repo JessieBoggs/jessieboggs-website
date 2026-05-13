@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'Terms of Use | Jessie Boggs Mortgage NMLS #2803455',
+  description: 'Terms of use for jessieboggs.com. Jessie Boggs NMLS #2803455. Powered by Edge Home Finance Corporation NMLS #891464.',
+};
 export default function Terms() {
   return (
     <section style={{

@@ -1,5 +1,8 @@
 import LoanPage from '../../components/LoanPage';
-
+export const metadata = {
+  title: 'Jumbo Home Loans Eastern WA & North Idaho | Jessie Boggs',
+  description: 'Jumbo mortgage loans above conforming limits in Eastern Washington and North Idaho. Competitive rates for well-qualified buyers. Jessie Boggs NMLS #2803455.',
+};
 export default function JumboLoans() {
   return (
     <LoanPage

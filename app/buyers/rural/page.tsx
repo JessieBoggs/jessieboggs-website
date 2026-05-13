@@ -1,5 +1,8 @@
 import BuyerPage from '../../components/BuyerPage';
-
+export const metadata = {
+  title: 'Rural Home Buyer Loans Eastern WA & North Idaho | Jessie Boggs',
+  description: 'USDA zero down loans for rural buyers in Eastern Washington and North Idaho. More places qualify than you think. Jessie Boggs NMLS #2803455.',
+};
 export default function RuralBuyers() {
   return (
     <BuyerPage

@@ -1,5 +1,8 @@
 import BuyerPage from '../../components/BuyerPage';
-
+export const metadata = {
+  title: 'Unique Mortgage Situations Eastern WA & North Idaho | Jessie Boggs',
+  description: 'Self-employed, recent credit events, non-traditional income. There is usually a path. Jessie Boggs NMLS #2803455. Eastern WA and North Idaho mortgage specialist.',
+};
 export default function UniqueSituations() {
   return (
     <BuyerPage

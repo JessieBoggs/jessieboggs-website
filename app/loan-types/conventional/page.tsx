@@ -1,5 +1,8 @@
 import LoanPage from '../../components/LoanPage';
-
+export const metadata = {
+  title: 'Conventional Home Loans Eastern WA & North Idaho | Jessie Boggs',
+  description: 'Conventional mortgage loans in Eastern Washington and North Idaho. Down payments as low as 3%. Competitive rates. Jessie Boggs NMLS #2803455. Call (253) 417-8790.',
+};
 export default function Conventional() {
   return (
     <LoanPage

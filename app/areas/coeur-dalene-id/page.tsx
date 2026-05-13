@@ -1,5 +1,8 @@
 import AreaPage from '../../components/AreaPage';
-
+export const metadata = {
+  title: 'Home Loans in Coeur d\'Alene ID | Jessie Boggs NMLS #2803455',
+  description: 'Mortgage loans in Coeur d\'Alene, Idaho. Conventional, Jumbo, VA, and USDA programs. Licensed in Idaho. Jessie Boggs NMLS #2803455. Call (253) 417-8790.',
+};
 export default function CoeurDAleneID() {
   return (
     <AreaPage

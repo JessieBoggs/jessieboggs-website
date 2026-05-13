@@ -1,5 +1,8 @@
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'Construction Loans Explained Eastern WA | Jessie Boggs NMLS #2803455',
+  description: 'Everything you need to know about construction loans before you build. Written by a loan officer with a decade in residential construction. Jessie Boggs NMLS #2803455.',
+};
 export default function ConstructionLoansExplained() {
   return (
     <>

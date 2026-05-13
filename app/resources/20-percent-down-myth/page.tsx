@@ -1,5 +1,8 @@
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'The 20% Down Payment Myth | Jessie Boggs NMLS #2803455',
+  description: 'Most buyers do not need 20% down. Here is what you actually need by loan type. Written for Eastern WA and North Idaho buyers by Jessie Boggs NMLS #2803455.',
+};
 export default function TwentyPercentDownMyth() {
   return (
     <>

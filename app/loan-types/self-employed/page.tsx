@@ -1,5 +1,8 @@
 import LoanPage from '../../components/LoanPage';
-
+export const metadata = {
+  title: 'Self-Employed Mortgage Loans Eastern WA | Jessie Boggs NMLS #2803455',
+  description: 'Bank statement and self-employed mortgage loans in Eastern Washington and North Idaho. Your income is more than your tax return. Jessie Boggs NMLS #2803455.',
+};
 export default function SelfEmployed() {
   return (
     <LoanPage

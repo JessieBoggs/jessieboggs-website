@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'About Jessie Boggs | Mortgage Loan Strategist NMLS #2803455',
+  description: '20+ years in sales and a decade in residential construction. Jessie Boggs is a mortgage loan strategist serving Eastern WA and North Idaho. Licensed WA & ID.',
+};
 export default function About() {
   return (
     <>

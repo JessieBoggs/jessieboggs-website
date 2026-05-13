@@ -1,5 +1,8 @@
 import Link from 'next/link';
-
+export const metadata = {
+  title: 'USDA Loans Stevens County WA: Zero Down | Jessie Boggs NMLS #2803455',
+  description: 'USDA Rural Development loans in Stevens County Washington. Zero down in more places than you think. Written by Jessie Boggs NMLS #2803455.',
+};
 export default function USDAStevensCounty() {
   return (
     <>

@@ -1,5 +1,8 @@
 import AreaPage from '../../components/AreaPage';
-
+export const metadata = {
+  title: 'Home Loans in Athol ID | Jessie Boggs Mortgage NMLS #2803455',
+  description: 'Mortgage loans in Athol, Idaho. USDA zero down available throughout the area. Construction loans, VA, FHA. Licensed in Idaho. Jessie Boggs NMLS #2803455.',
+};
 export default function AtholID() {
   return (
     <AreaPage
