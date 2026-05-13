@@ -2,10 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-export const metadata = {
-  title: 'Mortgage Payment Calculator Eastern WA | Jessie Boggs NMLS #2803455',
-  description: 'Calculate your monthly mortgage payment for any loan type. Conventional, FHA, VA, USDA, and Jumbo. Free calculator for Eastern WA and North Idaho buyers.',
-};
 export default function MortgageCalculator() {
   const [loanType, setLoanType] = useState('conventional');
   const [homePrice, setHomePrice] = useState(350000);

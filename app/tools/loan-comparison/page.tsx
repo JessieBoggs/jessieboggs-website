@@ -2,10 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-export const metadata = {
-  title: 'Mortgage Loan Comparison Tool Eastern WA | Jessie Boggs',
-  description: 'Compare VA, USDA, FHA, and Conventional loans side by side. Free loan comparison tool for Eastern Washington and North Idaho buyers. Jessie Boggs NMLS #2803455.',
-};
 export default function LoanComparison() {
   const [homePrice, setHomePrice] = useState(350000);
   const [interestRate, setInterestRate] = useState(6.46);
