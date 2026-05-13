@@ -1062,20 +1062,20 @@ export default function Home() {
           gap: '12px',
         }}>
           {[
-            { name: 'Spokane',        state: 'WA', stateBg: '#8F4228' },
-            { name: 'Spokane Valley', state: 'WA', stateBg: '#8F4228' },
-            { name: 'Coeur d\'Alene', state: 'ID', stateBg: '#2E5245' },
-            { name: 'Post Falls',     state: 'ID', stateBg: '#2E5245' },
-            { name: 'Deer Park',       state: 'WA', stateBg: '#8F4228' },
-            { name: 'Newport', state: 'WA', stateBg: '#8F4228' },
-            { name: 'Sandpoint',      state: 'ID', stateBg: '#2E5245' },
-            { name: 'Hayden',         state: 'ID', stateBg: '#2E5245' },
-            { name: 'Liberty Lake',   state: 'WA', stateBg: '#8F4228' },
-            { name: 'Airway Heights',       state: 'WA', stateBg: '#8F4228' },
-            { name: 'Rathdrum',       state: 'ID', stateBg: '#2E5245' },
-            { name: 'Athol',    state: 'ID', stateBg: '#2E5245' },
+            { name: 'Spokane',        state: 'WA', stateBg: '#8F4228', href: '/areas/spokane-wa' },
+            { name: 'Spokane Valley', state: 'WA', stateBg: '#8F4228', href: '/areas/spokane-valley-wa' },
+            { name: 'Coeur d\'Alene', state: 'ID', stateBg: '#2E5245', href: '/areas/coeur-dalene-id' },
+            { name: 'Post Falls',     state: 'ID', stateBg: '#2E5245', href: '/areas/post-falls-id' },
+            { name: 'Deer Park',      state: 'WA', stateBg: '#8F4228', href: '/areas/deer-park-wa' },
+            { name: 'Newport',        state: 'WA', stateBg: '#8F4228', href: '/areas/newport-wa' },
+            { name: 'Sandpoint',      state: 'ID', stateBg: '#2E5245', href: '/areas/sandpoint-id' },
+            { name: 'Hayden',         state: 'ID', stateBg: '#2E5245', href: '/areas/hayden-id' },
+            { name: 'Liberty Lake',   state: 'WA', stateBg: '#8F4228', href: '/areas/liberty-lake-wa' },
+            { name: 'Airway Heights', state: 'WA', stateBg: '#8F4228', href: '/areas/airway-heights-wa' },
+            { name: 'Rathdrum',       state: 'ID', stateBg: '#2E5245', href: '/areas/rathdrum-id' },
+            { name: 'Athol',          state: 'ID', stateBg: '#2E5245', href: '/areas/athol-id' },
           ].map((area) => (
-            <div key={area.name} style={{
+            <Link key={area.name} href={area.href} style={{
               background: 'rgba(255,255,255,0.04)',
               border: '1px solid rgba(212,196,176,0.2)',
               borderRadius: '10px',
@@ -1083,6 +1083,8 @@ export default function Home() {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between',
+              textDecoration: 'none',
+              transition: 'border-color 0.2s',
             }}>
               <span style={{ fontSize: '13px', fontWeight: 600, color: '#D4C4B0' }}>
                 {area.name}
@@ -1094,8 +1096,19 @@ export default function Home() {
               }}>
                 {area.state}
               </span>
-            </div>
+            </Link>
           ))}
+        </div>
+        <div style={{ textAlign: 'center' as const, marginTop: '32px' }}>
+          <Link href="/areas" style={{
+            display: 'inline-flex', alignItems: 'center',
+            background: 'transparent', color: '#D4C4B0',
+            fontSize: '14px', fontWeight: 700, padding: '13px 28px',
+            borderRadius: '6px', textDecoration: 'none',
+            border: '2px solid rgba(212,196,176,0.3)',
+          }}>
+            View All Service Areas →
+          </Link>
         </div>
       </section>
 
