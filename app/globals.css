@@ -269,9 +269,9 @@ body {
   }
   .hero-photo-col img {
     width: 100% !important;
-    height: 300px !important;
+    height: 420px !important;
     min-height: unset !important;
-    object-position: center 15% !important;
+    object-position: center 25% !important;
   }
   .hero-nmls-card {
     display: none !important;
