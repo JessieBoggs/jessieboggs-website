@@ -38,6 +38,215 @@ body {
   color: var(--espresso);
   -webkit-font-smoothing: antialiased;
 }
+/* ══════════════════════════════════════
+   TABLET RESPONSIVE — 769px to 1024px
+══════════════════════════════════════ */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* ── HEADER ── */
+  .header-logo-img {
+    height: 90px !important;
+  }
+
+  /* ── HERO ── */
+  .hero-section {
+    grid-template-columns: 1fr 320px !important;
+    padding: 0 32px !important;
+  }
+  .hero-content {
+    padding: 48px 24px 48px 0 !important;
+  }
+  .hero-h1 {
+    font-size: 42px !important;
+  }
+
+  /* ── GENERAL SECTIONS ── */
+  section, .band {
+    padding: 64px 32px !important;
+  }
+  h2, .h2 {
+    font-size: 36px !important;
+  }
+
+  /* ── WHY JESSIE ── */
+  .why-grid {
+    gap: 40px !important;
+  }
+
+  /* ── LOAN CARDS ── */
+  .loans-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* ── PROCESS ── */
+  .process-steps {
+    grid-template-columns: 1fr !important;
+  }
+  .process-step {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+  }
+  .process-step:last-child {
+    border-bottom: none !important;
+  }
+
+  /* ── TESTIMONIALS ── */
+  .testi-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── TOOLS ── */
+  .tools-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .calc-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .calc-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .comparison-controls {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .comparison-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  /* ── AGENTS ── */
+  .agent-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+  .agents-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .agents-diff-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .agents-resources-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* ── AREAS ── */
+  .areas-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .area-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .area-content-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+
+  /* ── BLOG ── */
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* ── FOOTER ── */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 32px !important;
+  }
+
+  /* ── ABOUT ── */
+  .about-hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .about-story-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+  .about-strategist-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+  .about-family-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+
+  /* ── CONTACT ── */
+  .contact-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .contact-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+  .contact-links-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── LOAN PAGES ── */
+  .loan-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .loan-types-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .faq-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* ── BUYER PAGES ── */
+  .buyer-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .buyer-programs-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* ── RESOURCES ── */
+  .resources-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .resources-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .resources-cta-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .article-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+
+  /* ── REVIEWS ── */
+  .reviews-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+    display: block !important;
+  }
+  .reviews-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── PRE-APPROVAL ── */
+  .preapproval-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+
+  /* ── CTA BAND ── */
+  .cta-band {
+    flex-direction: column !important;
+    padding: 52px 32px !important;
+  }
+}
 /* ══════════════════════════════════
    MOBILE RESPONSIVE — 768px and below
 ══════════════════════════════════ */
