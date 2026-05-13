@@ -1313,9 +1313,9 @@ export default function Home() {
               {/* Social icons */}
               <div style={{ display: 'flex', gap: '10px' }}>
                 {[
-                  { label: 'Facebook', href: 'https://facebook.com', letter: 'f' },
-                  { label: 'Instagram', href: 'https://instagram.com', letter: 'ig' },
-                  { label: 'LinkedIn', href: 'https://linkedin.com', letter: 'in' },
+                  { label: 'Facebook', href: 'https://facebook.com/jboggsofficial', letter: 'f' },
+                  { label: 'Instagram', href: 'https://instagram.com/jboggsofficial', letter: 'ig' },
+                  { label: 'LinkedIn', href: 'https://linkedin.com/in/jboggsofficial/', letter: 'in' },
                   { label: 'YouTube', href: 'https://youtube.com', letter: 'yt' },
                 ].map((s) => (
                   <a key={s.label} href={s.href} aria-label={s.label} style={{
